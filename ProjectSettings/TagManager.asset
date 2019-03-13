@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Detect
+  - Animal
+  - pot
+  - Object
+  - UI
+  - static
+  - River
+  - SeaAnimal
+  - RiverWall
+  - tree
+  - Set
+  - Xattack
+  - Icon
+  - potIcon
+  - vacuum
+  - potUI
+  - MixAni
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - char
+  - monster
+  - RiverWall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 2343930195
+    locked: 0
+  - name: back object
+    uniqueID: 385494947
+    locked: 0
+  - name: object
+    uniqueID: 1383958743
+    locked: 0
+  - name: monster
+    uniqueID: 49452981
+    locked: 0
+  - name: char
+    uniqueID: 3005219941
+    locked: 0
+  - name: Tree
+    uniqueID: 223012577
+    locked: 0
+  - name: UI
+    uniqueID: 2960148625
+    locked: 0
+  - name: OnTree
+    uniqueID: 1114672989
+    locked: 0
+  - name: OnTreeAnimal
+    uniqueID: 2320902557
+    locked: 0
