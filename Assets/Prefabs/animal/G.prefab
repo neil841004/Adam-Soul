@@ -20,10 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4161317148971332}
   - component: {fileID: 212410375068707012}
-  - component: {fileID: 65383825929980090}
   - component: {fileID: 114518785193720208}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
+  - component: {fileID: 114503788905273398}
+  - component: {fileID: 65778544850984512}
   m_Layer: 9
   m_Name: G
   m_TagString: Animal
@@ -59,7 +60,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!65 &65383825929980090
+--- !u!65 &65778544850984512
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -69,8 +70,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7064589, y: 0.5422555, z: 1}
-  m_Center: {x: -0.033378046, y: 0.01112777, z: 1.3375949e-16}
+  m_Size: {x: 0.64365804, y: 0.17255703, z: 1}
+  m_Center: {x: -0.027305424, y: -0.18148448, z: -2.250149e-15}
 --- !u!95 &95171185059510704
 Animator:
   serializedVersion: 3
@@ -88,6 +89,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114503788905273398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114518785193720208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,8 +149,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 49452981
-  m_SortingLayer: 4
+  m_SortingLayerID: -1289747355
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300024, guid: 4b2685b3140cd4797a48983b5078bf54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

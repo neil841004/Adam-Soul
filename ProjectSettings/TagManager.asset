@@ -21,6 +21,7 @@ TagManager:
   - vacuum
   - potUI
   - MixAni
+  - Tree2
   layers:
   - Default
   - TransparentFX

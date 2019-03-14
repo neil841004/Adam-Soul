@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114518785193720208}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
+  - component: {fileID: 114728561586091406}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Xattack
@@ -106,6 +107,17 @@ MonoBehaviour:
   runSpeed: 3
   haveWalkAnimation: 0
   direction: 0.6
+--- !u!114 &114728561586091406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -137,8 +149,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 49452981
-  m_SortingLayer: 4
+  m_SortingLayerID: -1289747355
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 13941882d3fd047bb8d988d18f909e6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
