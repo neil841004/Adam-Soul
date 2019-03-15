@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 65383825929980090}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
-  - component: {fileID: 65926723996228544}
-  - component: {fileID: 65110473380040226}
   - component: {fileID: 114648508753072064}
   - component: {fileID: 114476363263275892}
   m_Layer: 9
@@ -41,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1469260267201374}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.77, y: -0, z: -6.59}
+  m_LocalPosition: {x: 10.77, y: -0, z: -0.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,18 +60,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!65 &65110473380040226
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469260267201374}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.6415784, y: 0.49631783, z: 0.20000005}
-  m_Center: {x: 0.65368414, y: 0.41920993, z: 4.3372322e-17}
 --- !u!65 &65383825929980090
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -84,20 +70,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0553198, y: 0.9693497, z: 1}
-  m_Center: {x: -0.26072302, y: -0.23471224, z: -4.498414e-16}
---- !u!65 &65926723996228544
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469260267201374}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4174834, y: 0.9312657, z: 0.20000005}
-  m_Center: {x: -1.3046558, y: 0.6655306, z: -2.8615399e-15}
+  m_Size: {x: 1.8339901, y: 0.36438218, z: 1}
+  m_Center: {x: -0.2533455, y: -0.53719604, z: -5.285892e-16}
 --- !u!95 &95171185059510704
 Animator:
   serializedVersion: 3
@@ -126,6 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disparity: 0
+  layerUp: 0.01
+  layerDown: 0.01
 --- !u!114 &114648508753072064
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 114518785193720208}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
-  - component: {fileID: 65098328260679984}
   - component: {fileID: 114774010277989266}
   m_Layer: 0
   m_Name: fish
@@ -61,18 +60,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!65 &65098328260679984
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469260267201374}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.94259894, y: 0.2868812, z: 1}
-  m_Center: {x: -0.18027544, y: 0.41468886, z: -1.6862944e-17}
 --- !u!65 &65383825929980090
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -83,8 +70,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8480587, y: 0.49701998, z: 1}
-  m_Center: {x: 0.009469986, y: 0.057451546, z: 4.5772284e-17}
+  m_Size: {x: 1.7592446, y: 0.33715552, z: 1}
+  m_Center: {x: -0.03493706, y: -0.058007337, z: -5.051122e-17}
 --- !u!95 &95171185059510704
 Animator:
   serializedVersion: 3
@@ -131,6 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disparity: 0
+  layerUp: 0.01
+  layerDown: 0.01
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1

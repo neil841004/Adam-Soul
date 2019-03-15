@@ -24,8 +24,6 @@ GameObject:
   - component: {fileID: 114518785193720208}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
-  - component: {fileID: 65471721793160730}
-  - component: {fileID: 65675903226742066}
   - component: {fileID: 114905799390047822}
   m_Layer: 0
   m_Name: Chicken
@@ -41,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1469260267201374}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 11.06, y: 0, z: 1.23}
+  m_LocalPosition: {x: 6.11, y: -0, z: 4.42}
   m_LocalScale: {x: -0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,32 +70,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.87876594, y: 1.2521431, z: 1}
-  m_Center: {x: -0.081481256, y: 0.108046494, z: -3.5077673e-16}
---- !u!65 &65471721793160730
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469260267201374}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4974052, y: 0.4522346, z: 0.20000005}
-  m_Center: {x: -0.74717593, y: -0.031882226, z: 6.3468774e-17}
---- !u!65 &65675903226742066
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469260267201374}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5312946, y: 0.4841173, z: 0.20000005}
-  m_Center: {x: 0.5868531, y: -0.015940879, z: 3.1735552e-17}
+  m_Size: {x: 1.1460667, y: 0.45024252, z: 1}
+  m_Center: {x: -0.0012911643, y: -0.2929038, z: 2.0958685e-15}
 --- !u!95 &95171185059510704
 Animator:
   serializedVersion: 3
@@ -144,6 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disparity: 0
+  layerUp: 0.01
+  layerDown: 0.01
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1

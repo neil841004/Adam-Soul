@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 65383825929980090}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
-  - component: {fileID: 65926723996228544}
   - component: {fileID: 114933880731311870}
   - component: {fileID: 114054406060025360}
   m_Layer: 9
@@ -71,20 +70,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.595257, y: 0.31675404, z: 1}
-  m_Center: {x: 0.084838666, y: -0.301662, z: -1.5915372e-15}
---- !u!65 &65926723996228544
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469260267201374}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.7420132, y: 0.6855455, z: 0.20000005}
-  m_Center: {x: -0.2806444, y: 0.17131023, z: -6.3135507e-16}
+  m_Size: {x: 1.4642476, y: 0.30484414, z: 1}
+  m_Center: {x: 0.05506359, y: -0.30761695, z: 5.5512845e-17}
 --- !u!95 &95171185059510704
 Animator:
   serializedVersion: 3
@@ -113,6 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disparity: 0
+  layerUp: 0.01
+  layerDown: 0.01
 --- !u!114 &114933880731311870
 MonoBehaviour:
   m_ObjectHideFlags: 1

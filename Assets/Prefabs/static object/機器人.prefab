@@ -22,8 +22,7 @@ GameObject:
   - component: {fileID: 212387579443594532}
   - component: {fileID: 65384907074096628}
   - component: {fileID: 54708377507124812}
-  - component: {fileID: 65221538772141334}
-  - component: {fileID: 65754245429296986}
+  - component: {fileID: 114267183273918678}
   m_Layer: 0
   m_Name: "\u6A5F\u5668\u4EBA"
   m_TagString: Set
@@ -59,18 +58,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &65221538772141334
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1324909037701948}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0785735, y: 1.5823578, z: 0.20000005}
-  m_Center: {x: -4.5186043, y: -1.1431892, z: -2.1340148e-17}
 --- !u!65 &65384907074096628
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -81,20 +68,22 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.0668173, y: 8.159568, z: 0.20000005}
-  m_Center: {x: -0.5834504, y: 0.62290823, z: 1.7109642e-16}
---- !u!65 &65754245429296986
-BoxCollider:
+  m_Size: {x: 5.0668173, y: 1.1283046, z: 0.20000005}
+  m_Center: {x: -0.5834504, y: -3.2003424, z: -2.9000867e-15}
+--- !u!114 &114267183273918678
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1324909037701948}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.1758018, y: 2.4117227, z: 0.20000005}
-  m_Center: {x: 3.9019346, y: 0.7272423, z: 4.972852e-16}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disparity: 0
+  layerUp: 0.01
+  layerDown: 0.01
 --- !u!212 &212387579443594532
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -126,8 +115,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1383958743
-  m_SortingLayer: 3
+  m_SortingLayerID: -1289747355
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2bbb26eba63d8468c84614dd9d67d640, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

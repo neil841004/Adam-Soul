@@ -145,7 +145,9 @@ public class PlayerMovement : MonoBehaviour
             speed = speedOringin * 0.6f;
             onRiver = true;
         }
+
     }
+    
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("River"))
@@ -218,6 +220,9 @@ public class PlayerMovement : MonoBehaviour
     {
         isThrow = false;
         animator.SetBool("throw", isThrow);
+    }
+    void TakeJoint(){
+        
     }
 }
 
