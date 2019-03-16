@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1469260267201374}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.95, y: -0, z: 6.01}
+  m_LocalPosition: {x: 0.63, y: 0, z: 6.31}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   generateAmount: 2
+  escapeUI: {fileID: 1288991040301884, guid: afe9fb2459dfc4a8ea88d709616e8228, type: 2}
+  uHeight: 1.1
   aiRange: 3
   speed: 2
   runSpeed: 3

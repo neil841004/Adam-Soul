@@ -102,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   generateAmount: 2
+  escapeUI: {fileID: 1288991040301884, guid: afe9fb2459dfc4a8ea88d709616e8228, type: 2}
+  uHeight: 1
   aiRange: 3
   speed: 6
   runSpeed: 3

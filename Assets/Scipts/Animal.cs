@@ -20,6 +20,8 @@ public class Animal : MonoBehaviour
     float AiMovetimeMax = 5f;
     float AiMovetimeMin = 2f;
 
+    public float uHeight = 1f;
+
     int aiX;
     int aiZ;
     public int aiRange = 3;
@@ -52,7 +54,7 @@ public class Animal : MonoBehaviour
         {
             Move();
         }
-        if (isRange && playermove.isAttack && gameObject.CompareTag("Xattack"))
+        if (escapeCount <= 32 && escapeCount >= 1)
         {
             Escape();
         }
@@ -82,15 +84,16 @@ public class Animal : MonoBehaviour
     }
     void Escape()
     {
-        if (escapeCount <= 30 && escapeCount >= 1)
-        {
-            if (player.transform.position.x > transform.position.x) { aiX = -3; }
-            if (player.transform.position.x <= transform.position.x) { aiX = 3; }
+            if (player.transform.position.x > transform.position.x) { aiX = -4; }
+            if (player.transform.position.x <= transform.position.x) { aiX = 4; }
             transform.Translate(aiX * Time.deltaTime, 0, 0);
-            g = Instantiate(escapeUI, transform.position, transform.rotation, this.transform);
-            Destroy(g, 2f);
+            
+            Vector3 v3 = new Vector3(transform.position.x,transform.position.y,transform.position.z+uHeight);
+            if(escapeCount ==1){g = Instantiate(escapeUI, v3, transform.rotation, this.transform);}
+            Destroy(g, 1f);
             escapeCount++;
-        }
+            animator.SetInteger("walk", 1);
+            
         if (escapeCount >= 30)
         {
             escapeCount = 0;
@@ -133,13 +136,16 @@ public class Animal : MonoBehaviour
         if (other.CompareTag("Detect"))
         {
             isRange = true;
+            if(playermove.isAttack  && gameObject.CompareTag("Xattack") && escapeCount ==0){
             escapeCount = 1;
+            }
         }
     }
 
 
     private void OnCollisionStay(Collision other)
     {
+        escapeCount = 0;
         if (gameObject.name != "fish" && gameObject.name != "Loch Ness Monster")
         {
             if (other.collider.name == "wall_up" || other.collider.name == "RiverWall_down")
@@ -186,6 +192,7 @@ public class Animal : MonoBehaviour
             aiX = -aiX;
             aiZ = -aiZ;
         }
+        escapeCount = 0;
     }
 
     private void OnTriggerExit(Collider other)
