@@ -20,6 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4500984696196512}
   - component: {fileID: 212054268511658194}
+  - component: {fileID: 65154683889951154}
+  - component: {fileID: 65660164669174950}
+  - component: {fileID: 65969500859054888}
+  - component: {fileID: 114941049428717390}
   m_Layer: 0
   m_Name: "\u5927\u9EBB"
   m_TagString: static
@@ -40,6 +44,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &65154683889951154
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1019768361444300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1338043, y: 0.97935605, z: 0.20000005}
+  m_Center: {x: 14.143627, y: -2.8645332, z: -1.2285762e-14}
+--- !u!65 &65660164669174950
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1019768361444300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0901775, y: 0.9575422, z: 0.20000005}
+  m_Center: {x: -10.351813, y: -7.253627, z: 1.0606574e-14}
+--- !u!65 &65969500859054888
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1019768361444300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0465508, y: 0.8702896, z: 0.20000005}
+  m_Center: {x: -8.092973, y: 5.877853, z: 2.6685909e-14}
+--- !u!114 &114941049428717390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1019768361444300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496e9e19a2e734eafbf477cedf11905a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212054268511658194
 SpriteRenderer:
   m_ObjectHideFlags: 1

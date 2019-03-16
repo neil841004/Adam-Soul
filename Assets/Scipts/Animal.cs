@@ -12,6 +12,7 @@ public class Animal : MonoBehaviour
     public State state;
     public int generateAmount = 3;
     private GameObject player;
+    public GameObject escapeUI;
     bool isRange;
 
     float AiMovetime;
@@ -27,8 +28,10 @@ public class Animal : MonoBehaviour
     public int runSpeed = 3;
     public bool haveWalkAnimation;
     Animator animator;
+    GameObject g;
     public float direction;
     PlayerMovement playermove;
+    int escapeCount = 0;
     // Use this for initialization
     void Start()
     {
@@ -45,10 +48,18 @@ public class Animal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isRange && playermove.isAttack)
+        if (isRange && playermove.isAttack && gameObject.CompareTag("Animal"))
+        {
             Move();
-        else if (!isRange || !playermove.isAttack)
+        }
+        if (isRange && playermove.isAttack && gameObject.CompareTag("Xattack"))
+        {
+            Escape();
+        }
+        if ((!isRange || !playermove.isAttack) && escapeCount == 0)
+        {
             AiMove();
+        }
         if (aiX > 0)
         {
             //SetMonsterState(State.monsterRight);
@@ -69,6 +80,23 @@ public class Animal : MonoBehaviour
     {
         transform.position += (player.transform.position - transform.position).normalized * speed * Time.deltaTime;
     }
+    void Escape()
+    {
+        if (escapeCount <= 30 && escapeCount >= 1)
+        {
+            if (player.transform.position.x > transform.position.x) { aiX = -3; }
+            if (player.transform.position.x <= transform.position.x) { aiX = 3; }
+            transform.Translate(aiX * Time.deltaTime, 0, 0);
+            g = Instantiate(escapeUI, transform.position, transform.rotation, this.transform);
+            Destroy(g, 2f);
+            escapeCount++;
+        }
+        if (escapeCount >= 30)
+        {
+            escapeCount = 0;
+        }
+    }
+
     void AiMove()
     {
         AiMovetimer += Time.deltaTime;
@@ -102,9 +130,10 @@ public class Animal : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Detect") && gameObject.CompareTag("Animal"))
+        if (other.CompareTag("Detect"))
         {
             isRange = true;
+            escapeCount = 1;
         }
     }
 
