@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 54016754055911794}
   - component: {fileID: 65675682816178734}
   - component: {fileID: 114387573284525250}
+  - component: {fileID: 65766492234986008}
+  - component: {fileID: 114608902749301186}
   m_Layer: 0
   m_Name: "\u5783\u573E\u6876"
   m_TagString: Set
@@ -70,6 +72,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9888611, y: 0.3298862, z: 0.20000005}
   m_Center: {x: 0.15143609, y: -0.16354312, z: -5.477311e-16}
+--- !u!65 &65766492234986008
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568817410242066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.92518973, y: 1.0393101, z: 0.20000005}
+  m_Center: {x: 0.14382946, y: 0.08044678, z: 2.550393e-16}
 --- !u!114 &114387573284525250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,6 +98,18 @@ MonoBehaviour:
   disparity: 0
   layerUp: 0.01
   layerDown: 0.01
+--- !u!114 &114608902749301186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568817410242066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee8d51c0ca37429482edda37b61bb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!212 &212699268014153004
 SpriteRenderer:
   m_ObjectHideFlags: 1

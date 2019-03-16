@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 54020937844962268}
   - component: {fileID: 95557374145377622}
   - component: {fileID: 114928522173901740}
+  - component: {fileID: 114152285091288128}
   m_Layer: 0
   m_Name: Record player
   m_TagString: Set
@@ -132,8 +133,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.789072, y: 1, z: 3.683395}
-  m_Center: {x: -0.13301678, y: -2.2156375e-10, z: -0.011151666}
+  m_Size: {x: 4.195841, y: 1, z: 2.4447496}
+  m_Center: {x: -0.18112637, y: -4.7140236e-10, z: -0.023726452}
 --- !u!65 &65965338212969030
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -155,7 +156,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 342c26bc44c9d4770b09e05fe3790438, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.34
   m_Pitch: 1
@@ -165,7 +166,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.9004269
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -243,6 +244,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114152285091288128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710093725753290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee8d51c0ca37429482edda37b61bb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
 --- !u!114 &114263322746955776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -266,17 +279,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audios:
-  - {fileID: 8300000, guid: b49dfd46f2b0e47cc81f6908903184e1, type: 3}
-  - {fileID: 8300000, guid: 0123a1d9eb8694fb78ed8cedd3c78427, type: 3}
-  - {fileID: 8300000, guid: 628e04397dd3f40c4a9491ac7f830076, type: 3}
-  - {fileID: 8300000, guid: 164fe93c496da4fe5a65a8e9b52544db, type: 3}
-  - {fileID: 8300000, guid: 0df32aa46303d442da69dc66b32e8b74, type: 3}
-  - {fileID: 8300000, guid: 4f3536986e78f4838a99639dd12159f8, type: 3}
-  - {fileID: 8300000, guid: ffdc15078f02a412d9990b0462b546fd, type: 3}
-  - {fileID: 8300000, guid: 239386422817041cfa7303f0efc33cad, type: 3}
-  - {fileID: 8300000, guid: 7f648c9b07da745b39af18d38fed55f1, type: 3}
-  - {fileID: 8300000, guid: 34ef3662fff5c45d99505e2719cec398, type: 3}
-  - {fileID: 8300000, guid: ea60ee1234ec047e584f12c468fb5f57, type: 3}
+  - {fileID: 8300000, guid: b65b8fd01073b44cda0c167efab08466, type: 3}
+  - {fileID: 8300000, guid: 0a76113248628449684e3f4c424beb08, type: 3}
+  - {fileID: 8300000, guid: 5b22ec7f15f3747328df76eae99e5033, type: 3}
+  - {fileID: 8300000, guid: 7007bff45e209441fbf262b8134c9ed5, type: 3}
+  - {fileID: 8300000, guid: 342c26bc44c9d4770b09e05fe3790438, type: 3}
+  - {fileID: 8300000, guid: 5124d331d1a5e4e03a83c7f624044a72, type: 3}
   changeSongIcon: {fileID: 1580822415168586}
 --- !u!114 &114928522173901740
 MonoBehaviour:

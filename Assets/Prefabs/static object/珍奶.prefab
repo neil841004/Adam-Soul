@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 54718082004639850}
   - component: {fileID: 65226603948410898}
   - component: {fileID: 114894831463461196}
+  - component: {fileID: 114665195501968560}
   m_Layer: 0
   m_Name: "\u73CD\u5976"
   m_TagString: Set
@@ -65,11 +66,23 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1399763503733000}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8155422, y: 0.36005363, z: 0.20000005}
-  m_Center: {x: 0.07018566, y: -0.2456502, z: 3.090675e-17}
+  m_Size: {x: 0.8155422, y: 1.1886188, z: 0.20000005}
+  m_Center: {x: 0.07018566, y: -0.03850919, z: -5.15797e-17}
+--- !u!114 &114665195501968560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1399763503733000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee8d51c0ca37429482edda37b61bb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
 --- !u!114 &114894831463461196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disparity: 0
+  disparity: -0.5
   layerUp: 0.01
   layerDown: 0.01
 --- !u!212 &212684593760839504

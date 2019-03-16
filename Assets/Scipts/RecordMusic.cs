@@ -37,7 +37,7 @@ public class RecordMusic : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && iTime == 0)
             {
                 iCount += 1;
-                if (iCount >= 12) { iCount = 0; }
+                if (iCount >= 6) { iCount = 0; }
                 this.GetComponent<AudioSource>().clip = audios[iCount];
                 this.GetComponent<AudioSource>().Play();
                 iTime = 1;

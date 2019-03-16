@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4559729754815466}
   - component: {fileID: 212720424996536826}
+  - component: {fileID: 65984716736989160}
+  - component: {fileID: 114495969238654156}
   m_Layer: 0
   m_Name: "\u6BD4\u57FA\u5C3C"
   m_TagString: Set
@@ -40,6 +42,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &65984716736989160
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1295234067549968}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6706829, y: 0.91041523, z: 0.20000005}
+  m_Center: {x: -0.3495816, y: 0.1723962, z: 1.8356157e-16}
+--- !u!114 &114495969238654156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1295234067549968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee8d51c0ca37429482edda37b61bb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
 --- !u!212 &212720424996536826
 SpriteRenderer:
   m_ObjectHideFlags: 1
