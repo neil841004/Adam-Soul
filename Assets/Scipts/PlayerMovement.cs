@@ -180,6 +180,9 @@ public class PlayerMovement : MonoBehaviour
                     }
                 }
             }
+            if(other.collider.CompareTag("Woman")){
+                
+            }
         }
 
     }

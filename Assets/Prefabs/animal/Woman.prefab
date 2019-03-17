@@ -21,13 +21,15 @@ GameObject:
   - component: {fileID: 4161317148971332}
   - component: {fileID: 212410375068707012}
   - component: {fileID: 65383825929980090}
-  - component: {fileID: 114518785193720208}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
   - component: {fileID: 114728561586091406}
+  - component: {fileID: 114368486091569096}
+  - component: {fileID: 114815149025142620}
+  - component: {fileID: 65959816090195010}
   m_Layer: 0
-  m_Name: Slime
-  m_TagString: Xattack
+  m_Name: Woman
+  m_TagString: Waman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,8 +41,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1469260267201374}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 6.38, y: -0, z: 3.76}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalPosition: {x: 3.82, y: -0, z: 3.76}
+  m_LocalScale: {x: -1.1, y: 1.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -70,8 +72,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6256447, y: 0.4558351, z: 1}
-  m_Center: {x: -0.035138328, y: -0.112788, z: -7.351018e-17}
+  m_Size: {x: 0.5919499, y: 0.18626775, z: 1}
+  m_Center: {x: -0.02580919, y: -0.49547082, z: -6.397445e-16}
+--- !u!65 &65959816090195010
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7951979, y: 1.262258, z: 0.20000005}
+  m_Center: {x: -0.037929375, y: -0.02370607, z: 7.351727e-17}
 --- !u!95 &95171185059510704
 Animator:
   serializedVersion: 3
@@ -81,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 1469260267201374}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6784be808c53649da86bc352398c1d86, type: 2}
+  m_Controller: {fileID: 9100000, guid: aa139fab6d7564896bd7ab872dff054f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -89,7 +103,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114518785193720208
+--- !u!114 &114368486091569096
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -101,14 +115,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  generateAmount: 2
-  escapeUI: {fileID: 1288991040301884, guid: afe9fb2459dfc4a8ea88d709616e8228, type: 2}
-  uHeight: 0.8
+  generateAmount: 3
+  escapeUI: {fileID: 0}
+  uHeight: 1
   aiRange: 3
-  speed: 6
-  runSpeed: 3
-  haveWalkAnimation: 0
-  direction: 0.6
+  speed: 3
+  runSpeed: 1
+  haveWalkAnimation: 1
+  direction: -1.1
 --- !u!114 &114728561586091406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,6 +137,18 @@ MonoBehaviour:
   disparity: 0
   layerUp: 0.01
   layerDown: 0.01
+--- !u!114 &114815149025142620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee8d51c0ca37429482edda37b61bb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -157,12 +183,12 @@ SpriteRenderer:
   m_SortingLayerID: -1289747355
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 13941882d3fd047bb8d988d18f909e6f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 734ad20cfefc14326a4a4fd5c74a322a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.44, y: 1.67}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

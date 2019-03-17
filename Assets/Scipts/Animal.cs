@@ -84,16 +84,16 @@ public class Animal : MonoBehaviour
     }
     void Escape()
     {
-            if (player.transform.position.x > transform.position.x) { aiX = -4; }
-            if (player.transform.position.x <= transform.position.x) { aiX = 4; }
-            transform.Translate(aiX * Time.deltaTime, 0, 0);
-            
-            Vector3 v3 = new Vector3(transform.position.x,transform.position.y,transform.position.z+uHeight);
-            if(escapeCount ==1){g = Instantiate(escapeUI, v3, transform.rotation, this.transform);}
-            Destroy(g, 1f);
-            escapeCount++;
-            animator.SetInteger("walk", 1);
-            
+        if (player.transform.position.x > transform.position.x) { aiX = -4; }
+        if (player.transform.position.x <= transform.position.x) { aiX = 4; }
+        transform.Translate(aiX * Time.deltaTime, 0, 0);
+
+        Vector3 v3 = new Vector3(transform.position.x, transform.position.y, transform.position.z + uHeight);
+        if (escapeCount == 1) { g = Instantiate(escapeUI, v3, transform.rotation, this.transform); }
+        Destroy(g, 1f);
+        escapeCount++;
+        animator.SetInteger("walk", 1);
+
         if (escapeCount >= 30)
         {
             escapeCount = 0;
@@ -136,8 +136,9 @@ public class Animal : MonoBehaviour
         if (other.CompareTag("Detect"))
         {
             isRange = true;
-            if(playermove.isAttack  && gameObject.CompareTag("Xattack") && escapeCount ==0){
-            escapeCount = 1;
+            if (playermove.isAttack && gameObject.CompareTag("Xattack") && escapeCount == 0)
+            {
+                escapeCount = 1;
             }
         }
     }
@@ -145,8 +146,9 @@ public class Animal : MonoBehaviour
 
     private void OnCollisionStay(Collision other)
     {
-        if(!other.collider.CompareTag("Player")){
-        escapeCount = 0;
+        if (!other.collider.CompareTag("Player"))
+        {
+            escapeCount = 0;
         }
         if (gameObject.name != "fish" && gameObject.name != "Loch Ness Monster")
         {
@@ -186,16 +188,22 @@ public class Animal : MonoBehaviour
                 aiX = -Mathf.Abs(aiX);
             }
         }
+        if (gameObject.name == "Woman" && other.collider.CompareTag("Player"))
+        {
+            aiX = 0;
+            aiZ = 0;
+        }
     }
     private void OnCollisionEnter(Collision other)
     {
-        if ((other.collider.CompareTag("static") || other.collider.CompareTag("Player") || other.collider.CompareTag("Set"))&&escapeCount == 0)
+        if ((other.collider.CompareTag("static") || other.collider.CompareTag("Player") || other.collider.CompareTag("Set")) && escapeCount == 0 )
         {
             aiX = -aiX;
             aiZ = -aiZ;
         }
-        if(!other.collider.CompareTag("Player")){
-        escapeCount = 0;
+        if (!other.collider.CompareTag("Player"))
+        {
+            escapeCount = 0;
         }
     }
 
