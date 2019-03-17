@@ -145,7 +145,9 @@ public class Animal : MonoBehaviour
 
     private void OnCollisionStay(Collision other)
     {
+        if(!other.collider.CompareTag("Player")){
         escapeCount = 0;
+        }
         if (gameObject.name != "fish" && gameObject.name != "Loch Ness Monster")
         {
             if (other.collider.name == "wall_up" || other.collider.name == "RiverWall_down")
@@ -187,12 +189,14 @@ public class Animal : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if (other.collider.CompareTag("static") || other.collider.CompareTag("Player") || other.collider.CompareTag("Set"))
+        if ((other.collider.CompareTag("static") || other.collider.CompareTag("Player") || other.collider.CompareTag("Set"))&&escapeCount == 0)
         {
             aiX = -aiX;
             aiZ = -aiZ;
         }
+        if(!other.collider.CompareTag("Player")){
         escapeCount = 0;
+        }
     }
 
     private void OnTriggerExit(Collider other)

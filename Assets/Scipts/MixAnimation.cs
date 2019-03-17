@@ -14,6 +14,8 @@ public class MixAnimation : MonoBehaviour
         public GameObject text;
     }
     public GameObject potIcon;
+    public Text completion;
+    public Text completionRate;
     GameObject mixObject;
     GameObject obj;
     GameObject objNew;
@@ -27,6 +29,8 @@ public class MixAnimation : MonoBehaviour
     Color objColor;
     Color objNewColor;
     Color objTextColor;
+    Color completionColor;
+    Color completionRateColor;
     // Use this for initialization
     void Start()
     {
@@ -63,33 +67,45 @@ public class MixAnimation : MonoBehaviour
             objColor.a += 0.03f;
             objNewColor.a += 0.03f;
             objTextColor.a += 0.03f;
+            completionColor.a += 0.03f;
+            completionRateColor.a += 0.03f;
             obj.GetComponent<Image>().color = objColor;
             objNew.GetComponent<Image>().color = objNewColor;
             objText.GetComponent<Image>().color = objTextColor;
+            completion.color = completionColor;
+            completionRate.color = completionRateColor;
         }
         if (!iconFade && objColor.a >= 0 && objNewColor.a >= 0 && playing)
         {
             objColor.a -= 0.055f;
             objNewColor.a -= 0.055f;
             objTextColor.a -= 0.055f;
+            completionColor.a -= 0.055f;
+            completionRateColor.a -= 0.055f;
             obj.GetComponent<Image>().color = objColor;
             objNew.GetComponent<Image>().color = objNewColor;
             objText.GetComponent<Image>().color = objTextColor;
+            completion.color = completionColor;
+            completionRate.color = completionRateColor;
         }
         if (!iconFade && objColor.a <= 0 && objNewColor.a <= 0 && !playing)
         {
             Destroy(obj);
             Destroy(objNew);
             Destroy(objText);
-            
+
         }
         if (playing)
         {
+            float iRecord = GameObject.FindWithTag("pot").GetComponent<Spawner>().iRecord;
+            iRecord = iRecord * 10 / 3;
+            completion.text = "地球復甦率";
+            completionRate.text = iRecord.ToString("0.0") + "%";
             potIcon.SendMessage("EndShow");
             potIcon.GetComponent<PotUI>().haveMix = false;
             potIcon.GetComponent<PotUI>().currentIcon = 1;
         }
-        
+
     }
     public void CallMix()
     {
@@ -108,6 +124,8 @@ public class MixAnimation : MonoBehaviour
                 objColor = obj.GetComponent<Image>().color;
                 objNewColor = objNew.GetComponent<Image>().color;
                 objTextColor = objText.GetComponent<Image>().color;
+                completionColor = completion.color;
+                completionRateColor = completionRate.color;
                 iconFade = true;
             }
         }
@@ -116,7 +134,8 @@ public class MixAnimation : MonoBehaviour
     {
         iconFade = false;
     }
-    public void ShowIpotIcon(){
-            potIcon.SendMessage("FlashStart");
+    public void ShowIpotIcon()
+    {
+        potIcon.SendMessage("FlashStart");
     }
 }
