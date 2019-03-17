@@ -98,7 +98,7 @@ public class MixAnimation : MonoBehaviour
         if (playing)
         {
             float iRecord = GameObject.FindWithTag("pot").GetComponent<Spawner>().iRecord;
-            iRecord = iRecord * 10 / 3;
+            iRecord = iRecord * 10 / 3.1f;
             completion.text = "地球復甦率";
             completionRate.text = iRecord.ToString("0.0") + "%";
             potIcon.SendMessage("EndShow");
