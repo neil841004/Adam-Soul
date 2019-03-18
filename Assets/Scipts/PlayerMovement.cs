@@ -11,12 +11,13 @@ public class PlayerMovement : MonoBehaviour
         playerLeft,
         playerRight
     }
-    public AudioClip[] audios;
+    
     public State state;
     float speed = 6f;
     public float speedOringin = 6f;
     public GameObject animal_1 = null;
     public GameObject animal_2 = null;
+    public GameObject charSound;
     private Vector3 movement;
     private Rigidbody playerRb;
     Animator animator;
@@ -56,15 +57,22 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey("space"))
             {
                 isAttack = true;
+                charSound.SendMessage("PlaySound",2);
             }
             if (!Input.GetKey("space"))
             {
+                if(isAttack){
+                charSound.SendMessage("StopSound",2);
                 isAttack = false;
+                }
             }
         }
         if (animal_2)
         {
-            isAttack = false;
+            if(isAttack){
+                charSound.SendMessage("StopSound",2);
+                isAttack = false;
+                }
         }
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
@@ -101,6 +109,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("move", false);
             playerRb.velocity = new Vector3(0, 0, 0);
+            StopSound();
         }
     }
     void Move(float h, float v)
@@ -126,7 +135,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isMove)
             {
-                StopSound(0);
+                StopSound();
                 isMove = false;
             }
         }
@@ -134,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isMove = true;
             aniTeach.SetBool("move", isMove);
-            PlaySound(0);
+            PlaySound();
         }
     }
     void SetPlayerState(State newState)
@@ -200,7 +209,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R) && isThrow == false)
         {
-            PlaySound(1);
+            charSound.SendMessage("PlaySound",1);
             if (!animal_2)
             {
                 isThrow = true;
@@ -239,27 +248,17 @@ public class PlayerMovement : MonoBehaviour
     {
 
     }
-    void PlaySound(int id)
+    void PlaySound()
     {
-        this.GetComponent<AudioSource>().clip = audios[id];
+        
         if (!this.GetComponent<AudioSource>().isPlaying)
         {
-            if (id == 0)
-            {
                 this.GetComponent<AudioSource>().loop = true;
                 this.GetComponent<AudioSource>().Play();
-            }
-        }
-        if (id == 1)
-        {
-            Debug.Log(id);
-            this.GetComponent<AudioSource>().loop = false;
-            this.GetComponent<AudioSource>().Play();
         }
     }
-    void StopSound(int id)
+    void StopSound()
     {
-        this.GetComponent<AudioSource>().clip = audios[id];
         this.GetComponent<AudioSource>().Stop();
     }
 }

@@ -141,4 +141,7 @@ public class MixAnimation : MonoBehaviour
         potIcon.SendMessage("FlashStart");
         animator.SetBool("womanEnd",false);
     }
+    public void ExitGame(){
+        Application.Quit();
+    }
 }
