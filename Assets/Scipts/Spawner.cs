@@ -79,11 +79,20 @@ public class Spawner : MonoBehaviour
         haveRecord();
         if (mixObject && haveRecord() == 0 && a.name != b.name)
         {
+            if (mixObject.tag == "Woman")
+            {
+                GameObject.FindWithTag("MixAni").GetComponent<Animator>().SetBool("womanEnd", true);
+            }
+            if (mixObject.tag == "Man")
+            {
+
+                GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().manEnd = true;
+                GameObject.FindWithTag("MixAni").GetComponent<Animator>().SetBool("manEnd", true);
+            }
             GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().startAni = 1;
             aniTeach.SetBool("mixStop", true);
             mixRecord(mixObject);
             iRecord++;
-
             GameObject.FindWithTag("UI").SendMessage("MixItemDestroy");
         }
     }
@@ -288,6 +297,14 @@ public class Spawner : MonoBehaviour
         if (mixObject.tag == "Woman")
         {
             Generate(mixObject);
+            RandomGenerate(a);
+            Destroy(a);
+            RandomGenerate(b);
+            Destroy(b);
+            GameObject.FindWithTag("MixAni").GetComponent<Animator>().SetBool("womanEnd", true);
+        }
+        if (mixObject.tag == "Man")
+        {
             RandomGenerate(a);
             Destroy(a);
             RandomGenerate(b);
