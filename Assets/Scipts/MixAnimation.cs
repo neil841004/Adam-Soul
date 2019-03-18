@@ -149,4 +149,8 @@ public class MixAnimation : MonoBehaviour
     {
         GameObject.FindWithTag("Sound").SendMessage("PlaySound", i);
     }
+    public void CallRecorderFade(){
+        GameObject.FindWithTag("Recorder").SendMessage("FadeOutSound");
+    }
+    
 }

@@ -27,4 +27,20 @@ public class SoundManger : MonoBehaviour
         this.GetComponent<AudioSource>().clip = se[id];
         this.GetComponent<AudioSource>().Stop();
     }
+    void FadeOutSound(int id){
+        this.GetComponent<AudioSource>().clip = se[id];
+        this.StartCoroutine (FadeOut (this.GetComponent<AudioSource>(), 0.1f));
+    }
+    public static IEnumerator FadeOut (AudioSource audioSource, float FadeTime) {
+        float startVolume = audioSource.volume;
+ 
+        while (audioSource.volume > 0) {
+            audioSource.volume -= FadeTime;
+ 
+            yield return new WaitForSeconds(0.1f);
+        }
+ 
+        audioSource.Stop ();
+        audioSource.volume = startVolume;
+    }
 }

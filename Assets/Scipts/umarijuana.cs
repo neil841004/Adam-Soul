@@ -16,7 +16,7 @@ public class umarijuana : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("A");
+
         }
     }
 }

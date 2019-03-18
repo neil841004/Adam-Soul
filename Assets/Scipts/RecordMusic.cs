@@ -50,4 +50,20 @@ public class RecordMusic : MonoBehaviour
             changeSongIcon.gameObject.SetActive(false);
         }
     }
+    void FadeOutSound(){
+        Debug.Log("A");
+        this.StartCoroutine (FadeOut (this.GetComponent<AudioSource>(), 0.017f));
+    }
+    public static IEnumerator FadeOut (AudioSource audioSource, float FadeTime) {
+        float startVolume = audioSource.volume;
+ 
+        while (audioSource.volume > 0) {
+            audioSource.volume -= FadeTime;
+ 
+            yield return new WaitForSeconds(0.1f);
+        }
+ 
+        audioSource.Stop ();
+        audioSource.volume = startVolume;
+    }
 }

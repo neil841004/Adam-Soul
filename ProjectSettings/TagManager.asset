@@ -25,6 +25,7 @@ TagManager:
   - Woman
   - Man
   - Sound
+  - Recorder
   layers:
   - Default
   - TransparentFX

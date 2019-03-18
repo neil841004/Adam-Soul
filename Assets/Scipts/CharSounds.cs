@@ -29,7 +29,6 @@ public class CharSounds : MonoBehaviour
         }
         if (id == 1)
         {
-            Debug.Log(id);
             this.GetComponent<AudioSource>().loop = false;
             this.GetComponent<AudioSource>().Play();
         }
