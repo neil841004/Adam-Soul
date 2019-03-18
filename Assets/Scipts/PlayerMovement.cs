@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
         playerLeft,
         playerRight
     }
+    public AudioClip[] audios;
     public State state;
     float speed = 6f;
     public float speedOringin = 6f;
@@ -90,7 +91,10 @@ public class PlayerMovement : MonoBehaviour
         if (!playingMixAnimation)
         {
             Move(h, v);
-            Throw();
+            if (!isAttack)
+            {
+                Throw();
+            }
             StateMachine();
         }
         if (playingMixAnimation)
@@ -120,12 +124,17 @@ public class PlayerMovement : MonoBehaviour
         }
         if (h == 0 && v == 0)
         {
-            isMove = false;
+            if (isMove)
+            {
+                StopSound(0);
+                isMove = false;
+            }
         }
         else if (h != 0 || v != 0)
         {
             isMove = true;
             aniTeach.SetBool("move", isMove);
+            PlaySound(0);
         }
     }
     void SetPlayerState(State newState)
@@ -147,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-    
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("River"))
@@ -180,8 +189,9 @@ public class PlayerMovement : MonoBehaviour
                     }
                 }
             }
-            if(other.collider.CompareTag("Woman")){
-                
+            if (other.collider.CompareTag("Woman"))
+            {
+
             }
         }
 
@@ -190,6 +200,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R) && isThrow == false)
         {
+            PlaySound(1);
             if (!animal_2)
             {
                 isThrow = true;
@@ -224,8 +235,32 @@ public class PlayerMovement : MonoBehaviour
         isThrow = false;
         animator.SetBool("throw", isThrow);
     }
-    void TakeJoint(){
-        
+    void TakeJoint()
+    {
+
+    }
+    void PlaySound(int id)
+    {
+        this.GetComponent<AudioSource>().clip = audios[id];
+        if (!this.GetComponent<AudioSource>().isPlaying)
+        {
+            if (id == 0)
+            {
+                this.GetComponent<AudioSource>().loop = true;
+                this.GetComponent<AudioSource>().Play();
+            }
+        }
+        if (id == 1)
+        {
+            Debug.Log(id);
+            this.GetComponent<AudioSource>().loop = false;
+            this.GetComponent<AudioSource>().Play();
+        }
+    }
+    void StopSound(int id)
+    {
+        this.GetComponent<AudioSource>().clip = audios[id];
+        this.GetComponent<AudioSource>().Stop();
     }
 }
 
