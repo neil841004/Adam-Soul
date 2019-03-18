@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
   - component: {fileID: 114432032365378200}
+  - component: {fileID: 82518159103387014}
+  - component: {fileID: 114540201502323004}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Animal
@@ -72,6 +74,86 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2743009, y: 0.34957317, z: 1}
   m_Center: {x: -0.029148422, y: -0.18379347, z: -4.4372668e-16}
+--- !u!82 &82518159103387014
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9328fde3fb84442769608c2a07f92862, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.341
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 15
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95171185059510704
 Animator:
   serializedVersion: 3
@@ -116,11 +198,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   generateAmount: 1
+  escapeUI: {fileID: 0}
+  uHeight: 1
   aiRange: 3
   speed: 5
   runSpeed: 3
   haveWalkAnimation: 0
   direction: 0.85
+--- !u!114 &114540201502323004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a76de66d9b140948b9187610a93399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1

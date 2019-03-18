@@ -56,7 +56,7 @@ public class MixAnimation : MonoBehaviour
             animator.SetBool("MixStart", false);
         }
         AnimatorStateInfo stateinfo = animator.GetCurrentAnimatorStateInfo(0);
-        if (stateinfo.IsName("WhiteFade")||stateinfo.IsName("WomanEnd"))
+        if (stateinfo.IsName("WhiteFade") || stateinfo.IsName("WomanEnd"))
         {
             if (stateinfo.normalizedTime >= 0.8f)
             {
@@ -101,8 +101,8 @@ public class MixAnimation : MonoBehaviour
             float iRecord = GameObject.FindWithTag("pot").GetComponent<Spawner>().iRecord;
             iRecord = iRecord * 10 / 3.1f;
             completion.text = "地球復甦率";
-            if(!manEnd){completionRate.text = iRecord.ToString("0.0") + "%";}
-            if(manEnd){completionRate.text = "-999%";}
+            if (!manEnd) { completionRate.text = iRecord.ToString("0.0") + "%"; }
+            if (manEnd) { completionRate.text = "-999%"; }
             potIcon.SendMessage("EndShow");
             potIcon.GetComponent<PotUI>().haveMix = false;
             potIcon.GetComponent<PotUI>().currentIcon = 1;
@@ -139,9 +139,14 @@ public class MixAnimation : MonoBehaviour
     public void ShowIpotIcon()
     {
         potIcon.SendMessage("FlashStart");
-        animator.SetBool("womanEnd",false);
+        animator.SetBool("womanEnd", false);
     }
-    public void ExitGame(){
+    public void ExitGame()
+    {
         Application.Quit();
+    }
+    public void CallSounds(int i)
+    {
+        GameObject.FindWithTag("Sound").SendMessage("PlaySound", i);
     }
 }

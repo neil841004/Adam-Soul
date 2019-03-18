@@ -143,7 +143,10 @@ public class PlayerMovement : MonoBehaviour
         {
             isMove = true;
             aniTeach.SetBool("move", isMove);
+            if(!isThrow)
             PlaySound();
+            if(isThrow)
+            StopSound();
         }
     }
     void SetPlayerState(State newState)

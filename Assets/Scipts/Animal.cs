@@ -139,6 +139,7 @@ public class Animal : MonoBehaviour
             if (playermove.isAttack && gameObject.CompareTag("Xattack") && escapeCount == 0)
             {
                 escapeCount = 1;
+                this.GetComponent<AudioSource>().Play();
             }
         }
     }
