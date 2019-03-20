@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disparity: 0
-  layerUp: 0.01
-  layerDown: 0.01
+  layerUp: 0.005
+  layerDown: 0.02
 --- !u!114 &114967001551354926
 MonoBehaviour:
   m_ObjectHideFlags: 1

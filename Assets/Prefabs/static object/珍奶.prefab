@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disparity: -0.5
-  layerUp: 0.01
-  layerDown: 0.01
+  layerUp: 0.005
+  layerDown: 0.02
 --- !u!212 &212684593760839504
 SpriteRenderer:
   m_ObjectHideFlags: 1
