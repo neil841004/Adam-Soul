@@ -110,10 +110,6 @@ public class Spawner : MonoBehaviour
             recordGarbage[iGarbage].garbageB = b.name;
             
         }
-        if (GameObject.Find("nana"))
-        {
-            GameObject.FindObjectOfType<OnPS>().SendMessage("OpenPs4");
-        }
     }
     void Generate(GameObject obj)
     {

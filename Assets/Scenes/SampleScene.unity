@@ -3601,10 +3601,132 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  recordGarbage:
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
+  - garbageA: 
+    garbageB: 
   potUI: {fileID: 1686906340}
   iRecord: 0
   parent: {fileID: 2074194662}
   mixObject: {fileID: 0}
+  iGarbage: 0
 --- !u!65 &1239565572
 BoxCollider:
   m_ObjectHideFlags: 0

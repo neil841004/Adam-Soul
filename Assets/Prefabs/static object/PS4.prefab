@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65529733295230222}
   - component: {fileID: 54755696839752220}
   - component: {fileID: 114744645435527242}
+  - component: {fileID: 95942330345772438}
   m_Layer: 0
   m_Name: PS4
   m_TagString: Set
@@ -70,6 +71,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2630777, y: 0.23068742, z: 0.20000005}
   m_Center: {x: -0.08347845, y: -0.11404502, z: 1.5567926e-16}
+--- !u!95 &95942330345772438
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1343778366486794}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f208d0f1b77e84a02a359853354eda11, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114744645435527242
 MonoBehaviour:
   m_ObjectHideFlags: 1
