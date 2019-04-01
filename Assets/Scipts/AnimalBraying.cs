@@ -6,6 +6,7 @@ public class AnimalBraying : MonoBehaviour
 {
     int i = 0;
 	int iRandom;
+    bool manEnd;
     // Use this for initialization
     void Start()
     {
@@ -15,7 +16,8 @@ public class AnimalBraying : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!this.GetComponent<AudioSource>().isPlaying)
+        manEnd = GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().manEnd;
+        if (!this.GetComponent<AudioSource>().isPlaying && !manEnd)
         {
 			if(i == 0){iRandom = Random.Range(100,500);}
             if (i <= iRandom)

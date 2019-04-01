@@ -13,6 +13,7 @@ public class MixAnimation : MonoBehaviour
         public GameObject image;
         public GameObject text;
     }
+    public bool stopMusic;
     public GameObject potIcon;
     public Text completion;
     public Text completionRate;
@@ -165,11 +166,13 @@ public class MixAnimation : MonoBehaviour
     }
     public void CallSounds(int i)
     {
-        GameObject.FindWithTag("Sound").SendMessage("PlaySound", i);
+        GameObject.FindWithTag("Sound").SendMessage("Sound", i);
     }
     public void CallRecorderFade()
     {
+        stopMusic = true;
         GameObject.FindWithTag("Recorder").SendMessage("FadeOutSound");
+        GameObject.FindObjectOfType<AnimalBraying>().SendMessage("FadeOutSound");
+        
     }
-
 }

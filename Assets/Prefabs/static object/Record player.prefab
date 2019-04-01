@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65454323123265896}
   m_Layer: 0
   m_Name: Record Music
-  m_TagString: Untagged
+  m_TagString: Recorder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,7 +158,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 342c26bc44c9d4770b09e05fe3790438, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.34
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -281,10 +281,10 @@ MonoBehaviour:
   audios:
   - {fileID: 8300000, guid: b65b8fd01073b44cda0c167efab08466, type: 3}
   - {fileID: 8300000, guid: 0a76113248628449684e3f4c424beb08, type: 3}
-  - {fileID: 8300000, guid: 5b22ec7f15f3747328df76eae99e5033, type: 3}
-  - {fileID: 8300000, guid: 7007bff45e209441fbf262b8134c9ed5, type: 3}
-  - {fileID: 8300000, guid: 342c26bc44c9d4770b09e05fe3790438, type: 3}
-  - {fileID: 8300000, guid: 5124d331d1a5e4e03a83c7f624044a72, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   changeSongIcon: {fileID: 1580822415168586}
 --- !u!114 &114928522173901740
 MonoBehaviour:

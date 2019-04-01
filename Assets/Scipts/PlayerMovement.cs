@@ -167,10 +167,13 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = speedOringin * 0.6f;
             onRiver = true;
-            GameObject.FindWithTag("BGM").GetComponent<AudioLowPassFilter>().cutoffFrequency = 270;
-            
         }
-
+    }
+    private void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("River"))
+        {
+            GameObject.FindWithTag("Recorder").SendMessage("FadeOutLowPass");
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -178,7 +181,7 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = speedOringin;
             onRiver = false;
-            GameObject.FindWithTag("BGM").GetComponent<AudioLowPassFilter>().cutoffFrequency = 22000;
+            GameObject.FindWithTag("Recorder").SendMessage("FadeInLowPass");
         }
     }
     private void OnCollisionStay(Collision other)

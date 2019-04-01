@@ -20,12 +20,15 @@ public class SoundManger : MonoBehaviour
     {
         this.GetComponent<AudioSource>().clip = se[id];
         this.GetComponent<AudioSource>().Play();
-
     }
     void StopSound(int id)
     {
         this.GetComponent<AudioSource>().clip = se[id];
         this.GetComponent<AudioSource>().Stop();
+    }
+    void Sound(int id)
+    {
+        this.GetComponent<AudioSource>().PlayOneShot(se[id]);
     }
     void FadeOutSound(int id){
         this.GetComponent<AudioSource>().clip = se[id];
@@ -39,7 +42,6 @@ public class SoundManger : MonoBehaviour
  
             yield return new WaitForSeconds(0.1f);
         }
- 
         audioSource.Stop ();
         audioSource.volume = startVolume;
     }
