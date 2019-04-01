@@ -287,7 +287,7 @@ Prefab:
     - target: {fileID: 224477344327668838, guid: f6f498e89d8fd415fb2d2dcb878b5cbb,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224477344327668838, guid: f6f498e89d8fd415fb2d2dcb878b5cbb,
         type: 2}
@@ -753,8 +753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disparity: 0
-  layerUp: 0.005
-  layerDown: 0.02
+  layerUp: 0.02
+  layerDown: 0.005
 --- !u!1 &227119184
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +792,7 @@ Transform:
   - {fileID: 866731495}
   - {fileID: 1335164493}
   m_Father: {fileID: 857750802}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &227119186
 Animator:
@@ -2539,9 +2539,9 @@ RectTransform:
   - {fileID: 464024402}
   - {fileID: 1035034761}
   - {fileID: 755707162}
+  - {fileID: 489936796}
   - {fileID: 227119185}
   - {fileID: 1864929350}
-  - {fileID: 489936796}
   - {fileID: 1135171643}
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -3684,8 +3684,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8091401, y: 0.42292252, z: 1.54}
-  m_Center: {x: -0.00850004, y: -0.19690382, z: 7.545412e-16}
+  m_Size: {x: 1.8091401, y: 0.61195654, z: 1.54}
+  m_Center: {x: -0.00850004, y: -0.29142085, z: -5.886265e-16}
 --- !u!4 &1305734682
 Transform:
   m_ObjectHideFlags: 0
@@ -5023,7 +5023,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 857750802}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}

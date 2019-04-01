@@ -95,6 +95,7 @@ public class Spawner : MonoBehaviour
             iRecord++;
             GameObject.FindWithTag("UI").SendMessage("MixItemDestroy");
         }
+        GameObject.FindObjectOfType<OnPS>().SendMessage("OpenPs4");
     }
     void Generate(GameObject obj)
     {

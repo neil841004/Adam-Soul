@@ -23,8 +23,9 @@ GameObject:
   - component: {fileID: 54757429280758320}
   - component: {fileID: 65292551039913498}
   - component: {fileID: 114163494620147398}
+  - component: {fileID: 95949429155109392}
   m_Layer: 0
-  m_Name: "\u87A2\u5E55"
+  m_Name: Screen
   m_TagString: Set
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,6 +71,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3356857, y: 0.20675415, z: 0.20000005}
   m_Center: {x: -0.115798, y: -0.1068464, z: 2.5797775e-16}
+--- !u!95 &95949429155109392
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1373932973148514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 125870be899cf4a179fd94684bdf1e53, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114163494620147398
 MonoBehaviour:
   m_ObjectHideFlags: 1

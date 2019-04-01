@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54541550101742186}
   - component: {fileID: 65700157824261314}
   - component: {fileID: 114432679431527644}
+  - component: {fileID: 114928737117453238}
   m_Layer: 0
   m_Name: nana
   m_TagString: Set
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1680647451353638}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -14.059999, y: 0, z: 1.2900001}
+  m_LocalPosition: {x: -13.93, y: 0, z: 1.4}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,6 +103,17 @@ MonoBehaviour:
   disparity: 0
   layerUp: 0.005
   layerDown: 0.02
+--- !u!114 &114928737117453238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1680647451353638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 497ef55ad17ce45ba8e4c79f48739419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212181788960882880
 SpriteRenderer:
   m_ObjectHideFlags: 1
