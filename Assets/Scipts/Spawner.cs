@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-
     public GameObject[] monster;
     public GameObject[] record = new GameObject[36];
+    [System.Serializable]
+    public struct RecordGarbage
+    {
+        public string garbageA;
+        public string garbageB;
+    }
+    public RecordGarbage[] recordGarbage = new RecordGarbage[50];
     public GameObject potUI;
     public int iRecord = 0;
     Vector3 vector3;
@@ -16,7 +22,7 @@ public class Spawner : MonoBehaviour
     public GameObject parent;
     public GameObject mixObject;
     Animator aniTeach;
-    int iGarbage = 0;
+    public int iGarbage = 0;
 
     // Use this for initialization
 
@@ -95,10 +101,14 @@ public class Spawner : MonoBehaviour
             iRecord++;
             GameObject.FindWithTag("UI").SendMessage("MixItemDestroy");
         }
-        if (mixObject == null && a.name != b.name)
+        HaveGarbage();
+        if (mixObject == null && a.name != b.name && HaveGarbage() ==0)
         {
             GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().startAni = 1;
             GameObject.FindWithTag("UI").SendMessage("MixItemDestroy");
+            recordGarbage[iGarbage].garbageA = a.name;
+            recordGarbage[iGarbage].garbageB = b.name;
+            
         }
         if (GameObject.Find("nana"))
         {
@@ -331,5 +341,17 @@ public class Spawner : MonoBehaviour
             GameObject.FindWithTag("garbage").gameObject.transform.GetChild(iGarbage).gameObject.SetActive(true);
             iGarbage++;
         }
+    }
+    int HaveGarbage(){
+        for (int i = 0; i < iGarbage; i++)
+        {
+            if ((recordGarbage[i].garbageA == a.name && recordGarbage[i].garbageB == b.name)||(recordGarbage[i].garbageA == b.name && recordGarbage[i].garbageB == a.name) )
+            {
+                GameObject.FindWithTag("potUI").GetComponent<PotUI>().haveMix = true;
+
+                return 1;
+            }
+        }
+        return 0;
     }
 }
