@@ -16,6 +16,7 @@ public class Spawner : MonoBehaviour
     public GameObject parent;
     public GameObject mixObject;
     Animator aniTeach;
+    int iGarbage = 0;
 
     // Use this for initialization
 
@@ -85,7 +86,6 @@ public class Spawner : MonoBehaviour
             }
             if (mixObject.tag == "Man")
             {
-
                 GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().manEnd = true;
                 GameObject.FindWithTag("MixAni").GetComponent<Animator>().SetBool("manEnd", true);
             }
@@ -95,7 +95,15 @@ public class Spawner : MonoBehaviour
             iRecord++;
             GameObject.FindWithTag("UI").SendMessage("MixItemDestroy");
         }
-        GameObject.FindObjectOfType<OnPS>().SendMessage("OpenPs4");
+        if (mixObject == null && a.name != b.name)
+        {
+            GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().startAni = 1;
+            GameObject.FindWithTag("UI").SendMessage("MixItemDestroy");
+        }
+        if (GameObject.Find("nana"))
+        {
+            GameObject.FindObjectOfType<OnPS>().SendMessage("OpenPs4");
+        }
     }
     void Generate(GameObject obj)
     {
@@ -131,185 +139,197 @@ public class Spawner : MonoBehaviour
     }
     void AnimalGenerate()
     {
-        if (mixObject.tag == "static")
+        if (mixObject)
         {
-            Generate(mixObject);
-            if (a.name != "fish")
+            if (mixObject.tag == "static")
             {
-                RandomGenerate(a);
-                Destroy(a);
+                Generate(mixObject);
+                if (a.name != "fish")
+                {
+                    RandomGenerate(a);
+                    Destroy(a);
+                }
+                if (a.name == "fish")
+                {
+                    GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
+                    g.name = a.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(a);
+                }
+                if (b.name != "fish")
+                {
+                    RandomGenerate(b);
+                    Destroy(b);
+                }
+                if (b.name == "fish")
+                {
+                    GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
+                    g.name = b.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(b);
+                }
             }
-            if (a.name == "fish")
+            if (mixObject.tag == "Set")
             {
-                GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
-                g.name = a.name;
-                g.gameObject.SetActive(true);
-                Destroy(a);
+                Generate(mixObject);
+                if (a.name != "fish")
+                {
+                    RandomGenerate(a);
+                    Destroy(a);
+                }
+                if (a.name == "fish")
+                {
+                    GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
+                    g.name = a.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(a);
+                }
+                if (b.name != "fish")
+                {
+                    RandomGenerate(b);
+                    Destroy(b);
+                }
+                if (b.name == "fish")
+                {
+                    GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
+                    g.name = b.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(b);
+                }
             }
-            if (b.name != "fish")
+            if (mixObject.tag == "Animal" && mixObject.name != "fish" && mixObject.name != "Loch Ness Monster")
             {
-                RandomGenerate(b);
-                Destroy(b);
+                int amount = mixObject.GetComponent<Animal>().generateAmount;
+                for (int i = 0; i < amount; i++)
+                {
+                    RandomGenerate(mixObject);
+                }
+                if (a.name != "fish")
+                {
+                    RandomGenerate(a);
+                    Destroy(a);
+                }
+                if (a.name == "fish")
+                {
+                    GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
+                    g.name = a.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(a);
+                }
+                if (b.name != "fish")
+                {
+                    RandomGenerate(b);
+                    Destroy(b);
+                }
+                if (b.name == "fish")
+                {
+                    GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
+                    g.name = b.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(b);
+                }
             }
-            if (b.name == "fish")
+            if (mixObject.tag == "Xattack" && mixObject.name != "Loch Ness Monster")
             {
-                GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
-                g.name = b.name;
-                g.gameObject.SetActive(true);
-                Destroy(b);
+                int amount = mixObject.GetComponent<Animal>().generateAmount;
+                for (int i = 0; i < amount; i++)
+                {
+                    RandomGenerate(mixObject);
+                }
+                if (a.name != "fish")
+                {
+                    RandomGenerate(a);
+                    Destroy(a);
+                }
+                if (a.name == "fish")
+                {
+                    GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
+                    g.name = a.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(a);
+                }
+                if (b.name != "fish")
+                {
+                    RandomGenerate(b);
+                    Destroy(b);
+                }
+                if (b.name == "fish")
+                {
+                    GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
+                    g.name = b.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(b);
+                }
             }
-        }
-        if (mixObject.tag == "Set")
-        {
-            Generate(mixObject);
-            if (a.name != "fish")
-            {
-                RandomGenerate(a);
-                Destroy(a);
-            }
-            if (a.name == "fish")
-            {
-                GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
-                g.name = a.name;
-                g.gameObject.SetActive(true);
-                Destroy(a);
-            }
-            if (b.name != "fish")
-            {
-                RandomGenerate(b);
-                Destroy(b);
-            }
-            if (b.name == "fish")
-            {
-                GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
-                g.name = b.name;
-                g.gameObject.SetActive(true);
-                Destroy(b);
-            }
-        }
-        if (mixObject.tag == "Animal" && mixObject.name != "fish" && mixObject.name != "Loch Ness Monster")
-        {
-            int amount = mixObject.GetComponent<Animal>().generateAmount;
-            for (int i = 0; i < amount; i++)
-            {
-                RandomGenerate(mixObject);
-            }
-            if (a.name != "fish")
-            {
-                RandomGenerate(a);
-                Destroy(a);
-            }
-            if (a.name == "fish")
-            {
-                GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
-                g.name = a.name;
-                g.gameObject.SetActive(true);
-                Destroy(a);
-            }
-            if (b.name != "fish")
-            {
-                RandomGenerate(b);
-                Destroy(b);
-            }
-            if (b.name == "fish")
-            {
-                GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
-                g.name = b.name;
-                g.gameObject.SetActive(true);
-                Destroy(b);
-            }
-        }
-        if (mixObject.tag == "Xattack" && mixObject.name != "Loch Ness Monster")
-        {
-            int amount = mixObject.GetComponent<Animal>().generateAmount;
-            for (int i = 0; i < amount; i++)
-            {
-                RandomGenerate(mixObject);
-            }
-            if (a.name != "fish")
-            {
-                RandomGenerate(a);
-                Destroy(a);
-            }
-            if (a.name == "fish")
-            {
-                GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
-                g.name = a.name;
-                g.gameObject.SetActive(true);
-                Destroy(a);
-            }
-            if (b.name != "fish")
-            {
-                RandomGenerate(b);
-                Destroy(b);
-            }
-            if (b.name == "fish")
-            {
-                GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
-                g.name = b.name;
-                g.gameObject.SetActive(true);
-                Destroy(b);
-            }
-        }
 
-        if (mixObject.name == "Loch Ness Monster")
-        {
-            Generate(mixObject);
-            if (a.name != "fish")
+            if (mixObject.name == "Loch Ness Monster")
             {
+                Generate(mixObject);
+                if (a.name != "fish")
+                {
+                    RandomGenerate(a);
+                    Destroy(a);
+                }
+                if (a.name == "fish")
+                {
+                    GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
+                    g.name = a.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(a);
+                }
+                if (b.name != "fish")
+                {
+                    RandomGenerate(b);
+                    Destroy(b);
+                }
+                if (b.name == "fish")
+                {
+                    GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
+                    g.name = b.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(b);
+                }
+            }
+            if (mixObject.name == "fish")
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    int targetX = Random.Range(-16, -4);
+                    int targetZ = Random.Range(8, 10);
+                    Vector3 vector3 = new Vector3(transform.position.x + targetX, 0, transform.position.z + targetZ);
+                    GameObject g = Instantiate(mixObject, vector3, mixObject.transform.rotation);
+                    g.name = mixObject.name;
+                }
                 RandomGenerate(a);
                 Destroy(a);
-            }
-            if (a.name == "fish")
-            {
-                GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
-                g.name = a.name;
-                g.gameObject.SetActive(true);
-                Destroy(a);
-            }
-            if (b.name != "fish")
-            {
                 RandomGenerate(b);
                 Destroy(b);
             }
-            if (b.name == "fish")
+            if (mixObject.tag == "Woman")
             {
-                GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
-                g.name = b.name;
-                g.gameObject.SetActive(true);
+                Generate(mixObject);
+                RandomGenerate(a);
+                Destroy(a);
+                RandomGenerate(b);
+                Destroy(b);
+                GameObject.FindWithTag("MixAni").GetComponent<Animator>().SetBool("womanEnd", true);
+            }
+            if (mixObject.tag == "Man")
+            {
+                RandomGenerate(a);
+                Destroy(a);
+                RandomGenerate(b);
                 Destroy(b);
             }
         }
-        if (mixObject.name == "fish")
-        {
-            for (int i = 0; i < 3; i++)
-            {
-                int targetX = Random.Range(-16, -4);
-                int targetZ = Random.Range(8, 10);
-                Vector3 vector3 = new Vector3(transform.position.x + targetX, 0, transform.position.z + targetZ);
-                GameObject g = Instantiate(mixObject, vector3, mixObject.transform.rotation);
-                g.name = mixObject.name;
-            }
-            RandomGenerate(a);
-            Destroy(a);
-            RandomGenerate(b);
-            Destroy(b);
-        }
-        if (mixObject.tag == "Woman")
-        {
-            Generate(mixObject);
-            RandomGenerate(a);
-            Destroy(a);
-            RandomGenerate(b);
-            Destroy(b);
-            GameObject.FindWithTag("MixAni").GetComponent<Animator>().SetBool("womanEnd", true);
-        }
-        if (mixObject.tag == "Man")
+        if (mixObject == null)
         {
             RandomGenerate(a);
             Destroy(a);
             RandomGenerate(b);
             Destroy(b);
+            GameObject.FindWithTag("garbage").gameObject.transform.GetChild(iGarbage).gameObject.SetActive(true);
+            iGarbage++;
         }
     }
 }

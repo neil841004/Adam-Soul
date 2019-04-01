@@ -21,6 +21,9 @@ public class MixAnimation : MonoBehaviour
     GameObject objNew;
     GameObject objText;
     public GameObject newIcon;
+    public GameObject failIcon;
+    public GameObject failText;
+    public GameObject failImage;
     public MixGameObject[] mixGameObjects = new MixGameObject[36];
     Animator animator;
     public int startAni = 0;
@@ -116,20 +119,35 @@ public class MixAnimation : MonoBehaviour
     public void ShowIcon()
     {
         mixObject = GameObject.FindWithTag("pot").GetComponent<Spawner>().mixObject;
-        for (int i = 0; i < 36; i++)
+        if (mixObject)
         {
-            if (mixGameObjects[i].newThing.name == mixObject.name)
+            for (int i = 0; i < 36; i++)
             {
-                objNew = Instantiate(newIcon, transform.position, transform.rotation, this.transform);
-                obj = Instantiate(mixGameObjects[i].image, transform.position, transform.rotation, this.transform);
-                objText = Instantiate(mixGameObjects[i].text, transform.position, transform.rotation, this.transform);
-                objColor = obj.GetComponent<Image>().color;
-                objNewColor = objNew.GetComponent<Image>().color;
-                objTextColor = objText.GetComponent<Image>().color;
-                completionColor = completion.color;
-                completionRateColor = completionRate.color;
-                iconFade = true;
+                if (mixGameObjects[i].newThing.name == mixObject.name)
+                {
+                    objNew = Instantiate(newIcon, transform.position, transform.rotation, this.transform);
+                    obj = Instantiate(mixGameObjects[i].image, transform.position, transform.rotation, this.transform);
+                    objText = Instantiate(mixGameObjects[i].text, transform.position, transform.rotation, this.transform);
+                    objColor = obj.GetComponent<Image>().color;
+                    objNewColor = objNew.GetComponent<Image>().color;
+                    objTextColor = objText.GetComponent<Image>().color;
+                    completionColor = completion.color;
+                    completionRateColor = completionRate.color;
+                    iconFade = true;
+                }
             }
+        }
+        if (mixObject == null)
+        {
+            objNew = Instantiate(failIcon, transform.position, transform.rotation, this.transform);
+            obj = Instantiate(failImage, transform.position, transform.rotation, this.transform);
+            objText = Instantiate(failText, transform.position, transform.rotation, this.transform);
+            objColor = obj.GetComponent<Image>().color;
+            objNewColor = objNew.GetComponent<Image>().color;
+            objTextColor = objText.GetComponent<Image>().color;
+            completionColor = completion.color;
+            completionRateColor = completionRate.color;
+            iconFade = true;
         }
     }
     public void EndShowIcon()
@@ -149,8 +167,9 @@ public class MixAnimation : MonoBehaviour
     {
         GameObject.FindWithTag("Sound").SendMessage("PlaySound", i);
     }
-    public void CallRecorderFade(){
+    public void CallRecorderFade()
+    {
         GameObject.FindWithTag("Recorder").SendMessage("FadeOutSound");
     }
-    
+
 }

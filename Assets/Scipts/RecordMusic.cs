@@ -37,7 +37,7 @@ public class RecordMusic : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && iTime == 0)
             {
                 iCount += 1;
-                if (iCount >= 6) { iCount = 0; }
+                if (iCount >= 2) { iCount = 0; }
                 this.GetComponent<AudioSource>().clip = audios[iCount];
                 this.GetComponent<AudioSource>().Play();
                 iTime = 1;
@@ -51,7 +51,6 @@ public class RecordMusic : MonoBehaviour
         }
     }
     void FadeOutSound(){
-        Debug.Log("A");
         this.StartCoroutine (FadeOut (this.GetComponent<AudioSource>(), 0.017f));
     }
     public static IEnumerator FadeOut (AudioSource audioSource, float FadeTime) {

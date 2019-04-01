@@ -26,6 +26,8 @@ TagManager:
   - Man
   - Sound
   - Recorder
+  - garbage
+  - BGM
   layers:
   - Default
   - TransparentFX

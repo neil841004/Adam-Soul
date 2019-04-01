@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
         playerLeft,
         playerRight
     }
-    
+
     public State state;
     float speed = 6f;
     public float speedOringin = 6f;
@@ -57,22 +57,24 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey("space"))
             {
                 isAttack = true;
-                charSound.SendMessage("PlaySound",2);
+                charSound.SendMessage("PlaySound", 2);
             }
             if (!Input.GetKey("space"))
             {
-                if(isAttack){
-                charSound.SendMessage("StopSound",2);
-                isAttack = false;
+                if (isAttack)
+                {
+                    charSound.SendMessage("StopSound", 2);
+                    isAttack = false;
                 }
             }
         }
         if (animal_2)
         {
-            if(isAttack){
-                charSound.SendMessage("StopSound",2);
+            if (isAttack)
+            {
+                charSound.SendMessage("StopSound", 2);
                 isAttack = false;
-                }
+            }
         }
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
@@ -143,10 +145,10 @@ public class PlayerMovement : MonoBehaviour
         {
             isMove = true;
             aniTeach.SetBool("move", isMove);
-            if(!isThrow)
-            PlaySound();
-            if(isThrow)
-            StopSound();
+            if (!isThrow)
+                PlaySound();
+            if (isThrow)
+                StopSound();
         }
     }
     void SetPlayerState(State newState)
@@ -165,16 +167,18 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = speedOringin * 0.6f;
             onRiver = true;
+            GameObject.FindWithTag("BGM").GetComponent<AudioLowPassFilter>().cutoffFrequency = 270;
+            
         }
 
     }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("River"))
         {
             speed = speedOringin;
             onRiver = false;
+            GameObject.FindWithTag("BGM").GetComponent<AudioLowPassFilter>().cutoffFrequency = 22000;
         }
     }
     private void OnCollisionStay(Collision other)
@@ -212,7 +216,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R) && isThrow == false)
         {
-            charSound.SendMessage("PlaySound",1);
+            charSound.SendMessage("PlaySound", 1);
             if (!animal_2)
             {
                 isThrow = true;
@@ -253,11 +257,11 @@ public class PlayerMovement : MonoBehaviour
     }
     void PlaySound()
     {
-        
+
         if (!this.GetComponent<AudioSource>().isPlaying)
         {
-                this.GetComponent<AudioSource>().loop = true;
-                this.GetComponent<AudioSource>().Play();
+            this.GetComponent<AudioSource>().loop = true;
+            this.GetComponent<AudioSource>().Play();
         }
     }
     void StopSound()
