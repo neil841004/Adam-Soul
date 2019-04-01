@@ -22,10 +22,10 @@ GameObject:
   - component: {fileID: 212387579443594532}
   - component: {fileID: 65384907074096628}
   - component: {fileID: 54708377507124812}
-  - component: {fileID: 114267183273918678}
   - component: {fileID: 65483572723314352}
   - component: {fileID: 114967001551354926}
   - component: {fileID: 82931962726470628}
+  - component: {fileID: 114920623885029952}
   m_Layer: 0
   m_Name: "\u6A5F\u5668\u4EBA"
   m_TagString: Set
@@ -165,7 +165,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114267183273918678
+--- !u!114 &114920623885029952
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -173,12 +173,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1324909037701948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
+  m_Script: {fileID: 11500000, guid: d0de6fe6d8c7947da9311c6f7926abe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disparity: 0
-  layerUp: 0.005
-  layerDown: 0.02
+  centerDistance: 0
 --- !u!114 &114967001551354926
 MonoBehaviour:
   m_ObjectHideFlags: 1

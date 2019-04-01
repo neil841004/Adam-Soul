@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 95036339737254738}
   - component: {fileID: 54541550101742186}
   - component: {fileID: 65700157824261314}
-  - component: {fileID: 114432679431527644}
   - component: {fileID: 114928737117453238}
+  - component: {fileID: 114030821044170496}
   m_Layer: 0
   m_Name: nana
   m_TagString: Set
@@ -70,8 +70,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6867391, y: 0.303344, z: 0.20000005}
-  m_Center: {x: -0.016241953, y: -0.36068994, z: 1.4671424e-15}
+  m_Size: {x: 0.6867391, y: 0.22999011, z: 0.20000005}
+  m_Center: {x: -0.01624194, y: -0.45604983, z: -2.351787e-17}
 --- !u!95 &95036339737254738
 Animator:
   serializedVersion: 3
@@ -89,7 +89,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114432679431527644
+--- !u!114 &114030821044170496
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -97,12 +97,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1680647451353638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
+  m_Script: {fileID: 11500000, guid: d0de6fe6d8c7947da9311c6f7926abe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disparity: 0
-  layerUp: 0.005
-  layerDown: 0.02
+  centerDistance: 0
 --- !u!114 &114928737117453238
 MonoBehaviour:
   m_ObjectHideFlags: 1

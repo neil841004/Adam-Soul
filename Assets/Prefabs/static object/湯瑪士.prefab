@@ -23,10 +23,10 @@ GameObject:
   - component: {fileID: 65536576191000882}
   - component: {fileID: 65704286111494548}
   - component: {fileID: 54974900126653854}
-  - component: {fileID: 114007204294051190}
   - component: {fileID: 65036270381998282}
   - component: {fileID: 65826562757941890}
   - component: {fileID: 114147469182913124}
+  - component: {fileID: 114242548806984098}
   m_Layer: 0
   m_Name: "\u6E6F\u746A\u58EB"
   m_TagString: Set
@@ -110,20 +110,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.231842, y: 4.282794, z: 0.20000005}
   m_Center: {x: 3.3320007, y: 0.2524233, z: 1.721891e-17}
---- !u!114 &114007204294051190
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1783705246590386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disparity: 0
-  layerUp: 0.005
-  layerDown: 0.02
 --- !u!114 &114147469182913124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,6 +122,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.2
+--- !u!114 &114242548806984098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783705246590386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0de6fe6d8c7947da9311c6f7926abe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerDistance: 0
 --- !u!212 &212026038810396948
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 114518785193720208}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
-  - component: {fileID: 114084931431073104}
   - component: {fileID: 65424769644473448}
+  - component: {fileID: 114873950514816692}
   m_Layer: 9
   m_Name: R
   m_TagString: Animal
@@ -89,17 +89,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114084931431073104
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469260267201374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114518785193720208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,11 +102,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   generateAmount: 3
+  escapeUI: {fileID: 0}
+  uHeight: 1
   aiRange: 3
   speed: 5
   runSpeed: 2
   haveWalkAnimation: 0
   direction: 1.5
+--- !u!114 &114873950514816692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0de6fe6d8c7947da9311c6f7926abe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerDistance: 0
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1

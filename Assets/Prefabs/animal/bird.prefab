@@ -24,8 +24,8 @@ GameObject:
   - component: {fileID: 114518785193720208}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
-  - component: {fileID: 114896638542153040}
   - component: {fileID: 82620902375000762}
+  - component: {fileID: 114539619868892154}
   m_Layer: 0
   m_Name: bird
   m_TagString: Animal
@@ -190,7 +190,7 @@ MonoBehaviour:
   runSpeed: 4
   haveWalkAnimation: 0
   direction: -0.5
---- !u!114 &114896638542153040
+--- !u!114 &114539619868892154
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -198,12 +198,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1469260267201374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
+  m_Script: {fileID: 11500000, guid: d0de6fe6d8c7947da9311c6f7926abe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disparity: 0
-  layerUp: 0.01
-  layerDown: 0.01
+  centerDistance: 0
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1

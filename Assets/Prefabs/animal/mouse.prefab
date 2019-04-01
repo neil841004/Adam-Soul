@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114518785193720208}
   - component: {fileID: 95171185059510704}
   - component: {fileID: 54722111738241860}
-  - component: {fileID: 114964835374268574}
+  - component: {fileID: 114476334492148202}
   m_Layer: 0
   m_Name: mouse
   m_TagString: Animal
@@ -89,6 +89,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114476334492148202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0de6fe6d8c7947da9311c6f7926abe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerDistance: 0
 --- !u!114 &114518785193720208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,25 +114,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   generateAmount: 3
+  escapeUI: {fileID: 0}
+  uHeight: 1
   aiRange: 3
   speed: 7
   runSpeed: 4
   haveWalkAnimation: 0
   direction: 0.6
---- !u!114 &114964835374268574
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469260267201374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 994d9ed05454b4b60adc636d6246a5ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disparity: 0
-  layerUp: 0.01
-  layerDown: 0.01
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1
