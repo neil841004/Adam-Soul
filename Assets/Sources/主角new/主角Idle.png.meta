@@ -1,23 +1,23 @@
 fileFormatVersion: 2
-guid: d71414294b58e4d99943059c669c4385
-timeCreated: 1550976770
+guid: a957daf6ab4814ea59dfdd1108a2e04f
+timeCreated: 1554143425
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "\u4E3B\u89D2\u5438\u6536_0"
-    21300002: "\u4E3B\u89D2\u5438\u6536_1"
-    21300004: "\u4E3B\u89D2\u5438\u6536_2"
-    21300006: "\u4E3B\u89D2\u5438\u6536_3"
-    21300008: "\u4E3B\u89D2\u5438\u6536_4"
-    21300010: "\u4E3B\u89D2\u5438\u6536_5"
-    21300012: "\u4E3B\u89D2\u5438\u6536_6"
-    21300014: "\u4E3B\u89D2\u5438\u6536_7"
-    21300016: "\u4E3B\u89D2\u5438\u6536_8"
-    21300018: "\u4E3B\u89D2\u5438\u6536_9"
-    21300020: "\u4E3B\u89D2\u5438\u6536_10"
-    21300022: "\u4E3B\u89D2\u5438\u6536_11"
-    21300024: "\u4E3B\u89D2\u5438\u6536_12"
-    21300026: "\u4E3B\u89D2\u5438\u6536_13"
+    21300000: "\u4E3B\u89D2Idle_0"
+    21300002: "\u4E3B\u89D2Idle_1"
+    21300004: "\u4E3B\u89D2Idle_2"
+    21300006: "\u4E3B\u89D2Idle_3"
+    21300008: "\u4E3B\u89D2Idle_4"
+    21300010: "\u4E3B\u89D2Idle_5"
+    21300012: "\u4E3B\u89D2Idle_6"
+    21300014: "\u4E3B\u89D2Idle_7"
+    21300016: "\u4E3B\u89D2Idle_8"
+    21300018: "\u4E3B\u89D2Idle_9"
+    21300020: "\u4E3B\u89D2Idle_10"
+    21300022: "\u4E3B\u89D2Idle_11"
+    21300024: "\u4E3B\u89D2Idle_12"
+    21300026: "\u4E3B\u89D2Idle_13"
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -114,7 +114,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_0"
+      name: "\u4E3B\u89D2Idle_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -128,7 +128,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_1"
+      name: "\u4E3B\u89D2Idle_1"
       rect:
         serializedVersion: 2
         x: 273
@@ -142,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_2"
+      name: "\u4E3B\u89D2Idle_2"
       rect:
         serializedVersion: 2
         x: 546
@@ -156,7 +156,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_3"
+      name: "\u4E3B\u89D2Idle_3"
       rect:
         serializedVersion: 2
         x: 0
@@ -170,7 +170,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_4"
+      name: "\u4E3B\u89D2Idle_4"
       rect:
         serializedVersion: 2
         x: 273
@@ -184,7 +184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_5"
+      name: "\u4E3B\u89D2Idle_5"
       rect:
         serializedVersion: 2
         x: 546
@@ -198,7 +198,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_6"
+      name: "\u4E3B\u89D2Idle_6"
       rect:
         serializedVersion: 2
         x: 0
@@ -212,7 +212,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_7"
+      name: "\u4E3B\u89D2Idle_7"
       rect:
         serializedVersion: 2
         x: 273
@@ -226,7 +226,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_8"
+      name: "\u4E3B\u89D2Idle_8"
       rect:
         serializedVersion: 2
         x: 546
@@ -240,7 +240,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_9"
+      name: "\u4E3B\u89D2Idle_9"
       rect:
         serializedVersion: 2
         x: 0
@@ -254,7 +254,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_10"
+      name: "\u4E3B\u89D2Idle_10"
       rect:
         serializedVersion: 2
         x: 273
@@ -268,7 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_11"
+      name: "\u4E3B\u89D2Idle_11"
       rect:
         serializedVersion: 2
         x: 546
@@ -282,7 +282,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_12"
+      name: "\u4E3B\u89D2Idle_12"
       rect:
         serializedVersion: 2
         x: 0
@@ -296,7 +296,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5438\u6536_13"
+      name: "\u4E3B\u89D2Idle_13"
       rect:
         serializedVersion: 2
         x: 273

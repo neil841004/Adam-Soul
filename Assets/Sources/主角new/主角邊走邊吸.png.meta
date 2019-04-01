@@ -1,23 +1,24 @@
 fileFormatVersion: 2
-guid: b22f3f2b844e140349f610ce16af3d73
-timeCreated: 1550976768
+guid: 01548bda035d34f298565309983aa6d8
+timeCreated: 1554143424
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "\u4E3B\u89D2Idle_0"
-    21300002: "\u4E3B\u89D2Idle_1"
-    21300004: "\u4E3B\u89D2Idle_2"
-    21300006: "\u4E3B\u89D2Idle_3"
-    21300008: "\u4E3B\u89D2Idle_4"
-    21300010: "\u4E3B\u89D2Idle_5"
-    21300012: "\u4E3B\u89D2Idle_6"
-    21300014: "\u4E3B\u89D2Idle_7"
-    21300016: "\u4E3B\u89D2Idle_8"
-    21300018: "\u4E3B\u89D2Idle_9"
-    21300020: "\u4E3B\u89D2Idle_10"
-    21300022: "\u4E3B\u89D2Idle_11"
-    21300024: "\u4E3B\u89D2Idle_12"
-    21300026: "\u4E3B\u89D2Idle_13"
+    21300000: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_0"
+    21300002: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_1"
+    21300004: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_2"
+    21300006: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_3"
+    21300008: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_4"
+    21300010: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_5"
+    21300012: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_6"
+    21300014: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_7"
+    21300016: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_8"
+    21300018: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_9"
+    21300020: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_10"
+    21300022: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_11"
+    21300024: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_12"
+    21300026: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_13"
+    21300028: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_14"
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -114,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_0"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -122,13 +123,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_1"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_1"
       rect:
         serializedVersion: 2
         x: 273
@@ -136,13 +137,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_2"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_2"
       rect:
         serializedVersion: 2
         x: 546
@@ -150,13 +151,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_3"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_3"
       rect:
         serializedVersion: 2
         x: 0
@@ -164,13 +165,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_4"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_4"
       rect:
         serializedVersion: 2
         x: 273
@@ -178,13 +179,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_5"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_5"
       rect:
         serializedVersion: 2
         x: 546
@@ -192,13 +193,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_6"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_6"
       rect:
         serializedVersion: 2
         x: 0
@@ -206,13 +207,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_7"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_7"
       rect:
         serializedVersion: 2
         x: 273
@@ -220,13 +221,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_8"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_8"
       rect:
         serializedVersion: 2
         x: 546
@@ -234,13 +235,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_9"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_9"
       rect:
         serializedVersion: 2
         x: 0
@@ -248,13 +249,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_10"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_10"
       rect:
         serializedVersion: 2
         x: 273
@@ -262,13 +263,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_11"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_11"
       rect:
         serializedVersion: 2
         x: 546
@@ -276,13 +277,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_12"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_12"
       rect:
         serializedVersion: 2
         x: 0
@@ -290,13 +291,13 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2Idle_13"
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_13"
       rect:
         serializedVersion: 2
         x: 273
@@ -304,7 +305,21 @@ TextureImporter:
         width: 273
         height: 175
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u4E3B\u89D2\u908A\u8D70\u908A\u5438_14"
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 273
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

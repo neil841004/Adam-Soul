@@ -1,23 +1,24 @@
 fileFormatVersion: 2
-guid: b4655f922a26449f9b067f9cb0ad2e13
-timeCreated: 1550976769
+guid: d0720b3e01a6d49838c8c8540db65417
+timeCreated: 1554143426
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "\u4E3B\u89D2\u5410_0"
-    21300002: "\u4E3B\u89D2\u5410_1"
-    21300004: "\u4E3B\u89D2\u5410_2"
-    21300006: "\u4E3B\u89D2\u5410_3"
-    21300008: "\u4E3B\u89D2\u5410_4"
-    21300010: "\u4E3B\u89D2\u5410_5"
-    21300012: "\u4E3B\u89D2\u5410_6"
-    21300014: "\u4E3B\u89D2\u5410_7"
-    21300016: "\u4E3B\u89D2\u5410_8"
-    21300018: "\u4E3B\u89D2\u5410_9"
-    21300020: "\u4E3B\u89D2\u5410_10"
-    21300022: "\u4E3B\u89D2\u5410_11"
-    21300024: "\u4E3B\u89D2\u5410_12"
-    21300026: "\u4E3B\u89D2\u5410_13"
+    21300000: "\u4E3B\u89D2walk_0"
+    21300002: "\u4E3B\u89D2walk_1"
+    21300004: "\u4E3B\u89D2walk_2"
+    21300006: "\u4E3B\u89D2walk_3"
+    21300008: "\u4E3B\u89D2walk_4"
+    21300010: "\u4E3B\u89D2walk_5"
+    21300012: "\u4E3B\u89D2walk_6"
+    21300014: "\u4E3B\u89D2walk_7"
+    21300016: "\u4E3B\u89D2walk_8"
+    21300018: "\u4E3B\u89D2walk_9"
+    21300020: "\u4E3B\u89D2walk_10"
+    21300022: "\u4E3B\u89D2walk_11"
+    21300024: "\u4E3B\u89D2walk_12"
+    21300026: "\u4E3B\u89D2walk_13"
+    21300028: "\u4E3B\u89D2walk_14"
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -114,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_0"
+      name: "\u4E3B\u89D2walk_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -128,7 +129,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_1"
+      name: "\u4E3B\u89D2walk_1"
       rect:
         serializedVersion: 2
         x: 273
@@ -142,7 +143,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_2"
+      name: "\u4E3B\u89D2walk_2"
       rect:
         serializedVersion: 2
         x: 546
@@ -156,7 +157,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_3"
+      name: "\u4E3B\u89D2walk_3"
       rect:
         serializedVersion: 2
         x: 0
@@ -170,7 +171,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_4"
+      name: "\u4E3B\u89D2walk_4"
       rect:
         serializedVersion: 2
         x: 273
@@ -184,7 +185,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_5"
+      name: "\u4E3B\u89D2walk_5"
       rect:
         serializedVersion: 2
         x: 546
@@ -198,7 +199,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_6"
+      name: "\u4E3B\u89D2walk_6"
       rect:
         serializedVersion: 2
         x: 0
@@ -212,7 +213,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_7"
+      name: "\u4E3B\u89D2walk_7"
       rect:
         serializedVersion: 2
         x: 273
@@ -226,7 +227,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_8"
+      name: "\u4E3B\u89D2walk_8"
       rect:
         serializedVersion: 2
         x: 546
@@ -240,7 +241,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_9"
+      name: "\u4E3B\u89D2walk_9"
       rect:
         serializedVersion: 2
         x: 0
@@ -254,7 +255,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_10"
+      name: "\u4E3B\u89D2walk_10"
       rect:
         serializedVersion: 2
         x: 273
@@ -268,7 +269,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_11"
+      name: "\u4E3B\u89D2walk_11"
       rect:
         serializedVersion: 2
         x: 546
@@ -282,7 +283,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_12"
+      name: "\u4E3B\u89D2walk_12"
       rect:
         serializedVersion: 2
         x: 0
@@ -296,10 +297,24 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2\u5410_13"
+      name: "\u4E3B\u89D2walk_13"
       rect:
         serializedVersion: 2
         x: 273
+        y: 0
+        width: 273
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u4E3B\u89D2walk_14"
+      rect:
+        serializedVersion: 2
+        x: 546
         y: 0
         width: 273
         height: 175

@@ -4158,48 +4158,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1389824860}
---- !u!1001 &1615574415
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4921960203790328, guid: fec2efa79ab14462eb026c447578796a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 8.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921960203790328, guid: fec2efa79ab14462eb026c447578796a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921960203790328, guid: fec2efa79ab14462eb026c447578796a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -4.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921960203790328, guid: fec2efa79ab14462eb026c447578796a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921960203790328, guid: fec2efa79ab14462eb026c447578796a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921960203790328, guid: fec2efa79ab14462eb026c447578796a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921960203790328, guid: fec2efa79ab14462eb026c447578796a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921960203790328, guid: fec2efa79ab14462eb026c447578796a, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fec2efa79ab14462eb026c447578796a, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1626773128
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,12 +4958,12 @@ SpriteRenderer:
   m_SortingLayerID: -1289747355
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b22f3f2b844e140349f610ce16af3d73, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a957daf6ab4814ea59dfdd1108a2e04f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.73, y: 1.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

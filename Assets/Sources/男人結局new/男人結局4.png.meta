@@ -1,24 +1,24 @@
 fileFormatVersion: 2
-guid: 219396ff3b89d4ea787a080b21d191a6
-timeCreated: 1550976765
+guid: 177cd696f3f054f1cbbb6b3251531efa
+timeCreated: 1554144819
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "\u4E3B\u89D2walk_0"
-    21300002: "\u4E3B\u89D2walk_1"
-    21300004: "\u4E3B\u89D2walk_2"
-    21300006: "\u4E3B\u89D2walk_3"
-    21300008: "\u4E3B\u89D2walk_4"
-    21300010: "\u4E3B\u89D2walk_5"
-    21300012: "\u4E3B\u89D2walk_6"
-    21300014: "\u4E3B\u89D2walk_7"
-    21300016: "\u4E3B\u89D2walk_8"
-    21300018: "\u4E3B\u89D2walk_9"
-    21300020: "\u4E3B\u89D2walk_10"
-    21300022: "\u4E3B\u89D2walk_11"
-    21300024: "\u4E3B\u89D2walk_12"
-    21300026: "\u4E3B\u89D2walk_13"
-    21300028: "\u4E3B\u89D2walk_14"
+    21300000: "\u7537\u4EBA\u7D50\u5C404_0"
+    21300002: "\u7537\u4EBA\u7D50\u5C404_1"
+    21300004: "\u7537\u4EBA\u7D50\u5C404_2"
+    21300006: "\u7537\u4EBA\u7D50\u5C404_3"
+    21300008: "\u7537\u4EBA\u7D50\u5C404_4"
+    21300010: "\u7537\u4EBA\u7D50\u5C404_5"
+    21300012: "\u7537\u4EBA\u7D50\u5C404_6"
+    21300014: "\u7537\u4EBA\u7D50\u5C404_7"
+    21300016: "\u7537\u4EBA\u7D50\u5C404_8"
+    21300018: "\u7537\u4EBA\u7D50\u5C404_9"
+    21300020: "\u7537\u4EBA\u7D50\u5C404_10"
+    21300022: "\u7537\u4EBA\u7D50\u5C404_11"
+    21300024: "\u7537\u4EBA\u7D50\u5C404_12"
+    21300026: "\u7537\u4EBA\u7D50\u5C404_13"
+    21300028: "\u7537\u4EBA\u7D50\u5C404_14"
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_0"
+      name: "\u7537\u4EBA\u7D50\u5C404_0"
       rect:
         serializedVersion: 2
         x: 0
-        y: 700
-        width: 273
-        height: 175
+        y: 764
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,13 +129,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_1"
+      name: "\u7537\u4EBA\u7D50\u5C404_1"
       rect:
         serializedVersion: 2
-        x: 273
-        y: 700
-        width: 273
-        height: 175
+        x: 559
+        y: 764
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,13 +143,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_2"
+      name: "\u7537\u4EBA\u7D50\u5C404_2"
       rect:
         serializedVersion: 2
-        x: 546
-        y: 700
-        width: 273
-        height: 175
+        x: 1118
+        y: 764
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,55 +157,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_3"
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 525
-        width: 273
-        height: 175
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_4"
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 525
-        width: 273
-        height: 175
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_5"
-      rect:
-        serializedVersion: 2
-        x: 546
-        y: 525
-        width: 273
-        height: 175
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_6"
+      name: "\u7537\u4EBA\u7D50\u5C404_3"
       rect:
         serializedVersion: 2
         x: 0
-        y: 350
-        width: 273
-        height: 175
+        y: 573
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,13 +171,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_7"
+      name: "\u7537\u4EBA\u7D50\u5C404_4"
       rect:
         serializedVersion: 2
-        x: 273
-        y: 350
-        width: 273
-        height: 175
+        x: 559
+        y: 573
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,13 +185,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_8"
+      name: "\u7537\u4EBA\u7D50\u5C404_5"
       rect:
         serializedVersion: 2
-        x: 546
-        y: 350
-        width: 273
-        height: 175
+        x: 1118
+        y: 573
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,13 +199,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_9"
+      name: "\u7537\u4EBA\u7D50\u5C404_6"
       rect:
         serializedVersion: 2
         x: 0
-        y: 175
-        width: 273
-        height: 175
+        y: 382
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,13 +213,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_10"
+      name: "\u7537\u4EBA\u7D50\u5C404_7"
       rect:
         serializedVersion: 2
-        x: 273
-        y: 175
-        width: 273
-        height: 175
+        x: 559
+        y: 382
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,13 +227,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_11"
+      name: "\u7537\u4EBA\u7D50\u5C404_8"
       rect:
         serializedVersion: 2
-        x: 546
-        y: 175
-        width: 273
-        height: 175
+        x: 1118
+        y: 382
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,13 +241,55 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_12"
+      name: "\u7537\u4EBA\u7D50\u5C404_9"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 559
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u7537\u4EBA\u7D50\u5C404_10"
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 191
+        width: 559
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u7537\u4EBA\u7D50\u5C404_11"
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 191
+        width: 559
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u7537\u4EBA\u7D50\u5C404_12"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 273
-        height: 175
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,13 +297,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_13"
+      name: "\u7537\u4EBA\u7D50\u5C404_13"
       rect:
         serializedVersion: 2
-        x: 273
+        x: 559
         y: 0
-        width: 273
-        height: 175
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,13 +311,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "\u4E3B\u89D2walk_14"
+      name: "\u7537\u4EBA\u7D50\u5C404_14"
       rect:
         serializedVersion: 2
-        x: 546
+        x: 1118
         y: 0
-        width: 273
-        height: 175
+        width: 559
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
