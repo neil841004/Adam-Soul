@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  canEat: 1
 --- !u!212 &212684593760839504
 SpriteRenderer:
   m_ObjectHideFlags: 1

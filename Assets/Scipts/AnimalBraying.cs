@@ -19,7 +19,7 @@ public class AnimalBraying : MonoBehaviour
         manEnd = GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().manEnd;
         if (!this.GetComponent<AudioSource>().isPlaying && !manEnd)
         {
-			if(i == 0){iRandom = Random.Range(100,500);}
+			if(i == 0){iRandom = Random.Range(1700,2500);}
             if (i <= iRandom)
             {
 				if(i == iRandom-1){

@@ -42,7 +42,7 @@ Transform:
   m_GameObject: {fileID: 1469260267201374}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 6.11, y: -0, z: 4.42}
-  m_LocalScale: {x: -0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,7 +85,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 70786b98745024cab89c64ce5652d646, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  generateAmount: 2
+  generateAmount: 1
   escapeUI: {fileID: 1288991040301884, guid: afe9fb2459dfc4a8ea88d709616e8228, type: 2}
   uHeight: 1
   aiRange: 3
@@ -248,7 +248,7 @@ SpriteRenderer:
   m_SortingLayerID: -1289747355
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 94094b67684e541dd98d86a3cfa01bec, type: 3}
+  m_Sprite: {fileID: 21300018, guid: 94094b67684e541dd98d86a3cfa01bec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

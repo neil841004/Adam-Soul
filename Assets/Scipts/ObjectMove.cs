@@ -5,6 +5,8 @@ using UnityEngine;
 public class ObjectMove : MonoBehaviour {
 	private GameObject player;
 	public float speed = 1f;
+	public bool canEat = false;
+	public int soundNumber;
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -21,4 +23,10 @@ public class ObjectMove : MonoBehaviour {
             transform.position += (player.transform.position - transform.position).normalized * speed * Time.deltaTime;
         }
     }
+	private void OnCollisionEnter(Collision other) {
+		if(canEat && other.collider.CompareTag("Player")&&player.GetComponent<PlayerMovement>().isAttack){
+			Destroy(this.gameObject);
+			GameObject.FindWithTag("Sound").SendMessage("Sound",soundNumber);
+		}	
+	}
 }
