@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Love : MonoBehaviour
 {
-    public Transform target;
+    Transform target;
     public float height = 1.2f;
     int i = 0;
     // Use this for initialization
@@ -16,6 +16,9 @@ public class Love : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameObject.FindWithTag("Woman")){
+            target = GameObject.FindWithTag("Woman").GetComponent<Transform>();
+        }
         Vector3 loveTarget = new Vector3(target.position.x, target.position.y, target.position.z + height);
         transform.position = loveTarget;
 		if (i <= 30)
