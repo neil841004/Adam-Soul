@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     private int[] chooseani = new int[2];
     public GameObject detect;
     bool playingMixAnimation = false;
+    
     // Use this for initialization
     void Start()
     {
@@ -195,22 +196,26 @@ public class PlayerMovement : MonoBehaviour
                 {
                     if (!animal_1)
                     {
+                        playerRb.AddForce(other.contacts[0].normal * 500);
                         animal_1 = other.gameObject;
                         animal_1.gameObject.SetActive(false);
                         obj.SendMessage("Item1");
+                        GameObject.FindWithTag("Sound").SendMessage("Package",1);
+                        GameObject.FindWithTag("Sound").SendMessage("Sound",6);
+                        
+                        
                     }
                     else if (animal_1)
                     {
+                        playerRb.AddForce(other.contacts[0].normal * 500);
                         animal_2 = other.gameObject;
                         animal_2.gameObject.SetActive(false);
                         obj.SendMessage("Item2");
+                        GameObject.FindWithTag("Sound").SendMessage("Package",2);
+                        GameObject.FindWithTag("Sound").SendMessage("Sound",6);
                         aniTeach.SetBool("mix", true);
                     }
                 }
-            }
-            if (other.collider.CompareTag("Woman"))
-            {
-
             }
         }
 

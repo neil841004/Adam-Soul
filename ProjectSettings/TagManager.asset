@@ -28,6 +28,7 @@ TagManager:
   - Recorder
   - garbage
   - BGM
+  - love
   layers:
   - Default
   - TransparentFX

@@ -191,16 +191,21 @@ public class Animal : MonoBehaviour
         }
         if (gameObject.name == "Woman" && other.collider.CompareTag("Player"))
         {
+            
             aiX = 0;
             aiZ = 0;
+            AiMovetimer = 0;
+            animator.SetInteger("walk", 0);
         }
     }
     private void OnCollisionEnter(Collision other)
     {
         if ((other.collider.CompareTag("static") || other.collider.CompareTag("Player") || other.collider.CompareTag("Set")) && escapeCount == 0 )
         {
+            if(!(other.collider.CompareTag("Player")&&gameObject.name=="Woman")){
             aiX = -aiX;
             aiZ = -aiZ;
+            }
         }
         if (!other.collider.CompareTag("Player"))
         {

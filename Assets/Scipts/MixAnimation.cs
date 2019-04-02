@@ -172,8 +172,8 @@ public class MixAnimation : MonoBehaviour
     public void CallRecorderFade()
     {
         stopMusic = true;
-        GameObject.FindWithTag("Recorder").SendMessage("FadeOutSound");
-        GameObject.FindObjectOfType<AnimalBraying>().SendMessage("FadeOutSound");
+        GameObject.FindWithTag("Recorder").SendMessage("FadeOutSound",SendMessageOptions.DontRequireReceiver);
+        GameObject.FindObjectOfType<AnimalBraying>().SendMessage("FadeOutSound",SendMessageOptions.DontRequireReceiver);
         
     }
 }

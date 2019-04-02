@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SoundManger : MonoBehaviour
 {
+    int package = 0;
     public AudioClip[] se;
     // Use this for initialization
     void Start()
@@ -29,20 +30,39 @@ public class SoundManger : MonoBehaviour
     void Sound(int id)
     {
         this.GetComponent<AudioSource>().PlayOneShot(se[id]);
+        if (id == 6 )
+        {
+            this.GetComponent<AudioSource>().volume = 0.65f;
+            if(package == 1){this.GetComponent<AudioSource>().pitch = 0.7f;}
+            if(package == 2){this.GetComponent<AudioSource>().pitch = 0.5f;}
+        }
+        else
+        {
+            this.GetComponent<AudioSource>().volume = 0.65f;
+            this.GetComponent<AudioSource>().pitch = 1;
+        }
     }
-    void FadeOutSound(int id){
+    void FadeOutSound(int id)
+    {
         this.GetComponent<AudioSource>().clip = se[id];
-        this.StartCoroutine (FadeOut (this.GetComponent<AudioSource>(), 0.1f));
+        this.StartCoroutine(FadeOut(this.GetComponent<AudioSource>(), 0.1f));
     }
-    public static IEnumerator FadeOut (AudioSource audioSource, float FadeTime) {
+    public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
+    {
         float startVolume = audioSource.volume;
- 
-        while (audioSource.volume > 0) {
+
+        while (audioSource.volume > 0)
+        {
             audioSource.volume -= FadeTime;
- 
+
             yield return new WaitForSeconds(0.1f);
         }
-        audioSource.Stop ();
+        audioSource.Stop();
         audioSource.volume = startVolume;
+    }
+    void Package(int i)
+    {
+        package = i;
+        Debug.Log("A");
     }
 }
