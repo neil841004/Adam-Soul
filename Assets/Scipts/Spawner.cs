@@ -320,13 +320,13 @@ public class Spawner : MonoBehaviour
                 Destroy(b);
                 GameObject.FindWithTag("MixAni").GetComponent<Animator>().SetBool("womanEnd", true);
             }
-            if (mixObject.tag == "Man")
-            {
-                RandomGenerate(a);
-                Destroy(a);
-                RandomGenerate(b);
-                Destroy(b);
-            }
+            // if (mixObject.tag == "Man")
+            // {
+            //     RandomGenerate(a);
+            //     Destroy(a);
+            //     RandomGenerate(b);
+            //     Destroy(b);
+            // }
         }
         if (mixObject == null)
         {

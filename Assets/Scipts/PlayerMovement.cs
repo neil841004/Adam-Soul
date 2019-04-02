@@ -233,6 +233,7 @@ public class PlayerMovement : MonoBehaviour
                 Vector3 vector3 = this.transform.position;
                 vector3.x += throwDistance;
                 animal_1.transform.position = vector3;
+                animal_1.gameObject.SendMessage("StopMove");
                 animal_1 = null;
             }
             else if (animal_2)
@@ -243,6 +244,7 @@ public class PlayerMovement : MonoBehaviour
                 Vector3 vector3 = this.transform.position;
                 vector3.x += throwDistance;
                 animal_2.transform.position = vector3;
+                animal_2.gameObject.SendMessage("StopMove");
                 animal_2 = null;
             }
             GameObject.FindWithTag("UI").SendMessage("ItemDestroy");

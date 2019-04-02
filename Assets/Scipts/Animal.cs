@@ -232,5 +232,10 @@ public class Animal : MonoBehaviour
             state = newState;
         }
     }
+    void StopMove(){
+        aiX = 0;
+        aiZ = 0;
+        animator.SetInteger("walk", 0);
+    }
 
 }

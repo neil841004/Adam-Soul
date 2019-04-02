@@ -85,29 +85,12 @@ public class RecordMusic : MonoBehaviour
     void FadeOutLowPass()
     {
         this.GetComponent<AudioLowPassFilter>().cutoffFrequency = 200;
-        this.StartCoroutine(Out(this.GetComponent<AudioSource>(), 0.01f));
-        this.StopCoroutine("Out");
+
     }
     void FadeInLowPass()
     {
         this.GetComponent<AudioLowPassFilter>().cutoffFrequency = 22000;
-        this.StartCoroutine(In(this.GetComponent<AudioSource>(), 0.01f));
-        this.StopCoroutine("In");
+
     }
-    public static IEnumerator Out(AudioSource audioSource, float FadeTime)
-    {
-        while (audioSource.volume > 0.15f)
-        {
-            audioSource.volume -= FadeTime;
-            yield return new WaitForSeconds(0.15f);
-        }
-    }
-    public static IEnumerator In(AudioSource audioSource, float FadeTime)
-    {
-        while (audioSource.volume < 0.25f)
-        {
-            audioSource.volume += FadeTime;
-            yield return new WaitForSeconds(0.15f);
-        }
-    }
+
 }
