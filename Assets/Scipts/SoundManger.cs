@@ -39,15 +39,18 @@ public class SoundManger : MonoBehaviour
         {
             this.GetComponent<AudioSource>().pitch = 1;
         }
-        if (id == 4 || id == 5 || id == 13)
+        if (id == 4 || id == 5 || id == 13 || id == 1)
         {
             if (id == 4 || id == 5)
             {
-                this.GetComponent<AudioSource>().volume = 0.9f;
+                this.GetComponent<AudioSource>().volume = 1;
             }
             if (id == 13)
             {
                 this.GetComponent<AudioSource>().volume = 0.3f;
+            }
+            if(id == 1){
+                this.GetComponent<AudioSource>().volume = 0.4f;
             }
         }
         else { this.GetComponent<AudioSource>().volume = 0.65f; }

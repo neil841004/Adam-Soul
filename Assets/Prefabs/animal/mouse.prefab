@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  generateAmount: 3
+  generateAmount: 2
   escapeUI: {fileID: 0}
   uHeight: 1
   aiRange: 3

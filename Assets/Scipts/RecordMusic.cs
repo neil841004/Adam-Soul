@@ -14,6 +14,7 @@ public class RecordMusic : MonoBehaviour
     {
         this.GetComponent<AudioSource>().clip = audios[iCount];
         this.GetComponent<AudioSource>().Play();
+        GameObject.FindWithTag("Map").GetComponent<AudioSource>().volume = 0.25f;
     }
     void Update()
     {

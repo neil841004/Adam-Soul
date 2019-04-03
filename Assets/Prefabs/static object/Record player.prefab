@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114508959298595980}
   - component: {fileID: 65454323123265896}
   - component: {fileID: 169768911622734592}
+  - component: {fileID: 114330342574689950}
   m_Layer: 0
   m_Name: Record Music
   m_TagString: Recorder
@@ -301,6 +302,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824687c6e337e491a96470f0914b3a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114330342574689950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1528497368371580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e991896480b2a4b19b241c028b772b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inW: 200
+  outW: 22000
 --- !u!114 &114462568468005352
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -105,13 +105,16 @@ public class MixAnimation : MonoBehaviour
             float iRecord = GameObject.FindWithTag("pot").GetComponent<Spawner>().iRecord;
             iRecord = iRecord * 10 / 3.2f;
             completion.text = "地球復甦率";
-            if (!manEnd&&mixObject) { completionRate.text = iRecord.ToString("0.0") + "%"; }
+            if (!manEnd && mixObject) { completionRate.text = iRecord.ToString("0.0") + "%"; }
             if (manEnd) { completionRate.text = "-999%"; }
-            if(mixObject == null){completion.text ="無貢獻";completionRate.text=" ";}
+            if (mixObject == null) { completion.text = "無貢獻"; completionRate.text = " "; }
             potIcon.SendMessage("EndShow");
             potIcon.GetComponent<PotUI>().haveMix = false;
             potIcon.GetComponent<PotUI>().currentIcon = 1;
-            GameObject.FindWithTag("Woman").SendMessage("StopMove");
+            if (GameObject.FindWithTag("Woman"))
+            {
+                GameObject.FindWithTag("Woman").SendMessage("StopMove", SendMessageOptions.DontRequireReceiver);
+            }
         }
 
     }
@@ -173,8 +176,8 @@ public class MixAnimation : MonoBehaviour
     public void CallRecorderFade()
     {
         stopMusic = true;
-        GameObject.FindWithTag("Recorder").SendMessage("FadeOutSound",SendMessageOptions.DontRequireReceiver);
-        GameObject.FindObjectOfType<AnimalBraying>().SendMessage("FadeOutSound",SendMessageOptions.DontRequireReceiver);
-        
+        GameObject.FindWithTag("Recorder").SendMessage("FadeOutSound", SendMessageOptions.DontRequireReceiver);
+        GameObject.FindObjectOfType<AnimalBraying>().SendMessage("FadeOutSound", SendMessageOptions.DontRequireReceiver);
+
     }
 }

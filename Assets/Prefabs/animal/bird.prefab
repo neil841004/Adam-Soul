@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: 54722111738241860}
   - component: {fileID: 82620902375000762}
   - component: {fileID: 114539619868892154}
+  - component: {fileID: 169237320527699630}
+  - component: {fileID: 114443120418046084}
   m_Layer: 0
   m_Name: bird
   m_TagString: Animal
@@ -170,6 +172,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114443120418046084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e991896480b2a4b19b241c028b772b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inW: 1000
+  outW: 22000
 --- !u!114 &114518785193720208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -202,6 +217,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerDistance: 0
+--- !u!169 &169237320527699630
+AudioLowPassFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1

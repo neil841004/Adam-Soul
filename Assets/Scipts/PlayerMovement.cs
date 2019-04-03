@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isMove = false;
     public bool isThrow = false;
     bool isMix = false;
-    bool onRiver = false;
+    public bool onRiver = false;
     bool slowSpeed = false;
     private int curstate;
     public int count = 0;
@@ -170,19 +170,13 @@ public class PlayerMovement : MonoBehaviour
             onRiver = true;
         }
     }
-    private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("River"))
-        {
-            GameObject.FindWithTag("Recorder").SendMessage("FadeOutLowPass");
-        }
-    }
+
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("River"))
+        if (other.CompareTag("River")&&this.gameObject.name == "player")
         {
             speed = speedOringin;
             onRiver = false;
-            GameObject.FindWithTag("Recorder").SendMessage("FadeInLowPass");
         }
     }
     private void OnCollisionStay(Collision other)

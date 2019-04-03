@@ -27,6 +27,8 @@ GameObject:
   - component: {fileID: 82302026698503874}
   - component: {fileID: 114796400449486800}
   - component: {fileID: 114050570725991258}
+  - component: {fileID: 169897667483554194}
+  - component: {fileID: 114368807583973920}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Xattack
@@ -183,6 +185,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerDistance: 0
+--- !u!114 &114368807583973920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e991896480b2a4b19b241c028b772b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inW: 1000
+  outW: 22000
 --- !u!114 &114518785193720208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,6 +229,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a76de66d9b140948b9187610a93399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!169 &169897667483554194
+AudioLowPassFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469260267201374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!212 &212410375068707012
 SpriteRenderer:
   m_ObjectHideFlags: 1
