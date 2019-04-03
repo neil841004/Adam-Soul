@@ -111,6 +111,7 @@ public class MixAnimation : MonoBehaviour
             potIcon.SendMessage("EndShow");
             potIcon.GetComponent<PotUI>().haveMix = false;
             potIcon.GetComponent<PotUI>().currentIcon = 1;
+            GameObject.FindWithTag("Woman").SendMessage("StopMove");
         }
 
     }

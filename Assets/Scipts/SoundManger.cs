@@ -30,19 +30,27 @@ public class SoundManger : MonoBehaviour
     void Sound(int id)
     {
         this.GetComponent<AudioSource>().PlayOneShot(se[id]);
-        if (id == 6 )
+        if (id == 6)
         {
-            if(package == 1){this.GetComponent<AudioSource>().pitch = 0.7f;}
-            if(package == 2){this.GetComponent<AudioSource>().pitch = 0.5f;}
+            if (package == 1) { this.GetComponent<AudioSource>().pitch = 0.7f; }
+            if (package == 2) { this.GetComponent<AudioSource>().pitch = 0.5f; }
         }
         else
         {
             this.GetComponent<AudioSource>().pitch = 1;
         }
-        if(id == 4 || id == 5){
-            this.GetComponent<AudioSource>().volume = 0.9f;
+        if (id == 4 || id == 5 || id == 13)
+        {
+            if (id == 4 || id == 5)
+            {
+                this.GetComponent<AudioSource>().volume = 0.9f;
+            }
+            if (id == 13)
+            {
+                this.GetComponent<AudioSource>().volume = 0.3f;
+            }
         }
-        else{this.GetComponent<AudioSource>().volume = 0.65f;}
+        else { this.GetComponent<AudioSource>().volume = 0.65f; }
     }
     void FadeOutSound(int id)
     {

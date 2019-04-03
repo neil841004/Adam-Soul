@@ -29,7 +29,8 @@ public class WomanMovement : MonoBehaviour
         }
     }
 	private void OnCollisionEnter(Collision other) {
-		if (!this.GetComponent<AudioSource>().isPlaying)
+        bool manEnd = GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().manEnd;
+		if (!this.GetComponent<AudioSource>().isPlaying && !manEnd && other.collider.CompareTag("Player"))
             {
                 this.GetComponent<AudioSource>().PlayOneShot(this.GetComponent<AudioSource>().clip);
             }

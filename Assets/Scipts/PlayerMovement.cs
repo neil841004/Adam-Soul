@@ -189,7 +189,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isAttack)
         {
-            if (other.collider.CompareTag("Animal"))
+            if (other.collider.CompareTag("Animal")&&!animal_2)
             {
                 GameObject.FindWithTag("UI").SendMessage("Flash");
                 aniTeach.SetBool("attack", isAttack);
