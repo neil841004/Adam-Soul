@@ -13,7 +13,7 @@ public class MixAnimation : MonoBehaviour
         public GameObject image;
         public GameObject text;
     }
-    public bool stopMusic;
+    public  bool stopMusic;
     public GameObject potIcon;
     public Text completion;
     public Text completionRate;
@@ -132,7 +132,7 @@ public class MixAnimation : MonoBehaviour
         mixObject = GameObject.FindWithTag("pot").GetComponent<Spawner>().mixObject;
         if (mixObject)
         {
-            for (int i = 0; i < 31; i++)
+            for (int i = 0; i <= 31; i++)
             {
                 if (mixGameObjects[i].newThing.name == mixObject.name)
                 {

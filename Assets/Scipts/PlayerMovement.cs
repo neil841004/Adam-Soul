@@ -190,7 +190,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     if (!animal_1)
                     {
-                        playerRb.AddForce(other.contacts[0].normal * 500);
+                        playerRb.AddForce(other.contacts[0].normal * 700);
                         animal_1 = other.gameObject;
                         animal_1.gameObject.SetActive(false);
                         obj.SendMessage("Item1");
@@ -201,7 +201,7 @@ public class PlayerMovement : MonoBehaviour
                     }
                     else if (animal_1)
                     {
-                        playerRb.AddForce(other.contacts[0].normal * 500);
+                        playerRb.AddForce(other.contacts[0].normal * 700);
                         animal_2 = other.gameObject;
                         animal_2.gameObject.SetActive(false);
                         obj.SendMessage("Item2");

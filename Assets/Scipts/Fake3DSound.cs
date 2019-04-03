@@ -8,6 +8,7 @@ public class Fake3DSound : MonoBehaviour {
 	public float distance;
 	public float originVolume = 0.3f;
 	public float decrease = 0.005f;
+	bool stopMusic;
 	// Use this for initialization
 	void Start () {
 		audio = this.GetComponent<AudioSource>();
@@ -16,7 +17,10 @@ public class Fake3DSound : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		stopMusic = GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().stopMusic;
+		if(!stopMusic){
 		distance = (transform.position - target.position).sqrMagnitude;
 		audio.volume = originVolume - distance*decrease;
+		}
 	}
 }
