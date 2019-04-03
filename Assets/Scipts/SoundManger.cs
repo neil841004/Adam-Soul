@@ -76,6 +76,5 @@ public class SoundManger : MonoBehaviour
     void Package(int i)
     {
         package = i;
-        Debug.Log("A");
     }
 }

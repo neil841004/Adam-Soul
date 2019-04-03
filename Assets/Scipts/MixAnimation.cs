@@ -29,7 +29,7 @@ public class MixAnimation : MonoBehaviour
     Animator animator;
     public int startAni = 0;
     public bool playing = false;
-    bool iconFade;
+    bool iconFade = false;
     Color objColor;
     Color objNewColor;
     Color objTextColor;
@@ -67,7 +67,7 @@ public class MixAnimation : MonoBehaviour
                 playing = false;
             }
         }
-        if (iconFade && objColor.a <= 1 && objNewColor.a <= 1 && playing)
+        if (iconFade && objColor.a <= 1 && objNewColor.a <= 1 && completionColor.a <=1 && completionRateColor.a <=1 && playing)
         {
             objColor.a += 0.03f;
             objNewColor.a += 0.03f;
@@ -80,7 +80,7 @@ public class MixAnimation : MonoBehaviour
             completion.color = completionColor;
             completionRate.color = completionRateColor;
         }
-        if (!iconFade && objColor.a >= 0 && objNewColor.a >= 0 && playing)
+        if (!iconFade && objColor.a >= 0 && objNewColor.a >= 0 && completionColor.a >=0 && completionRateColor.a >=0 && playing)
         {
             objColor.a -= 0.055f;
             objNewColor.a -= 0.055f;
@@ -93,11 +93,17 @@ public class MixAnimation : MonoBehaviour
             completion.color = completionColor;
             completionRate.color = completionRateColor;
         }
-        if (!iconFade && objColor.a <= 0 && objNewColor.a <= 0 && !playing)
+        if (!iconFade && !playing)
         {
             Destroy(obj);
             Destroy(objNew);
             Destroy(objText);
+            completionColor = completion.color;
+            completionRateColor = completionRate.color;
+            completionColor.a = 0;
+            completionRateColor.a = 0;
+            completion.color = completionColor;
+            completionRate.color = completionRateColor;
         }
         if (playing)
         {
@@ -126,7 +132,7 @@ public class MixAnimation : MonoBehaviour
         mixObject = GameObject.FindWithTag("pot").GetComponent<Spawner>().mixObject;
         if (mixObject)
         {
-            for (int i = 0; i < 33; i++)
+            for (int i = 0; i < 31; i++)
             {
                 if (mixGameObjects[i].newThing.name == mixObject.name)
                 {
