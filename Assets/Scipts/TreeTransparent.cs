@@ -6,7 +6,7 @@ public class TreeTransparent : MonoBehaviour
 {
     Color color;
     bool enterTree = false;
-    public GameObject tree;
+
 
     // Use this for initialization
     void Start()
@@ -32,7 +32,7 @@ public class TreeTransparent : MonoBehaviour
             }
         }
         this.gameObject.GetComponent<SpriteRenderer>().color = color;
-        tree.GetComponent<SpriteRenderer>().color = color;
+
     }
     private void OnTriggerEnter(Collider other)
     {
