@@ -47,7 +47,7 @@ public class SoundManger : MonoBehaviour
             }
             if (id == 13)
             {
-                this.GetComponent<AudioSource>().volume = 0.3f;
+                this.GetComponent<AudioSource>().volume = 0.2f;
             }
             if(id == 1){
                 this.GetComponent<AudioSource>().volume = 0.4f;

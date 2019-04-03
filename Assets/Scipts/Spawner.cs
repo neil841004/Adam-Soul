@@ -330,10 +330,30 @@ public class Spawner : MonoBehaviour
         }
         if (mixObject == null)
         {
-            RandomGenerate(a);
-            Destroy(a);
-            RandomGenerate(b);
-            Destroy(b);
+            if (a.name != "fish")
+                {
+                    RandomGenerate(a);
+                    Destroy(a);
+                }
+                if (a.name == "fish")
+                {
+                    GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
+                    g.name = a.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(a);
+                }
+                if (b.name != "fish")
+                {
+                    RandomGenerate(b);
+                    Destroy(b);
+                }
+                if (b.name == "fish")
+                {
+                    GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
+                    g.name = b.name;
+                    g.gameObject.SetActive(true);
+                    Destroy(b);
+                }
             GameObject.FindWithTag("garbage").gameObject.transform.GetChild(iGarbage).gameObject.SetActive(true);
             iGarbage++;
         }
@@ -344,7 +364,6 @@ public class Spawner : MonoBehaviour
             if ((recordGarbage[i].garbageA == a.name && recordGarbage[i].garbageB == b.name)||(recordGarbage[i].garbageA == b.name && recordGarbage[i].garbageB == a.name) )
             {
                 GameObject.FindWithTag("potUI").GetComponent<PotUI>().haveMix = true;
-
                 return 1;
             }
         }

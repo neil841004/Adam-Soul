@@ -30,6 +30,7 @@ GameObject:
   - component: {fileID: 114550773633165284}
   - component: {fileID: 169232543131882324}
   - component: {fileID: 114651139217416022}
+  - component: {fileID: 114956007349074256}
   m_Layer: 0
   m_Name: nana
   m_TagString: Set
@@ -88,7 +89,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dad49dd7ea3c04055b5112e63f63f169, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -126,7 +127,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -232,6 +233,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497ef55ad17ce45ba8e4c79f48739419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114956007349074256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1680647451353638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c87d6d1fcd24e84ad1d57c767c1c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0
+  originVolume: 0.2
+  decrease: 0.004
 --- !u!169 &169232543131882324
 AudioLowPassFilter:
   m_ObjectHideFlags: 1

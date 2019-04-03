@@ -219,7 +219,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && isThrow == false)
         {
             charSound.SendMessage("PlaySound", 1);
-            if (!animal_2)
+            if(!animal_1){
+                isThrow = true;
+                animator.SetBool("throw", isThrow);
+            }
+            if (!animal_2 && animal_1)
             {
                 isThrow = true;
                 animator.SetBool("throw", isThrow);

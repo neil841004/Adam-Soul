@@ -98,7 +98,6 @@ public class MixAnimation : MonoBehaviour
             Destroy(obj);
             Destroy(objNew);
             Destroy(objText);
-
         }
         if (playing)
         {
