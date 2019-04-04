@@ -72,6 +72,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   height: 1.2
+  i: 0
+  Child: {fileID: 1378847465468872, guid: 540e016aecd8a4d6daf358a0421b41bd, type: 2}
 --- !u!114 &114812490334489754
 MonoBehaviour:
   m_ObjectHideFlags: 1

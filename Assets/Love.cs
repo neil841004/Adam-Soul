@@ -6,7 +6,9 @@ public class Love : MonoBehaviour
 {
     Transform target;
     public float height = 1.2f;
-    int i = 0;
+    public int i = 0;
+    public GameObject Child;
+    bool gene= true;
     // Use this for initialization
     void Start()
     {
@@ -26,6 +28,10 @@ public class Love : MonoBehaviour
             Vector3 s3 = new Vector3(i * 0.0001f, i * 0.0001f, 0);
             transform.localScale += s3;
             height += 0.0007f;
+        }
+        if (i== 30 && gene){
+            GameObject.FindWithTag("pot").SendMessage("GenerateChild",Child);
+            gene = false;
         }
     }
     public void Increase()

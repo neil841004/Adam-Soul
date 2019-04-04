@@ -132,7 +132,7 @@ public class MixAnimation : MonoBehaviour
         mixObject = GameObject.FindWithTag("pot").GetComponent<Spawner>().mixObject;
         if (mixObject)
         {
-            for (int i = 0; i <= 31; i++)
+            for (int i = 0; i <= 32; i++)
             {
                 if (mixGameObjects[i].newThing.name == mixObject.name)
                 {

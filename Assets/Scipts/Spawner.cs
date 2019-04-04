@@ -102,13 +102,13 @@ public class Spawner : MonoBehaviour
             GameObject.FindWithTag("UI").SendMessage("MixItemDestroy");
         }
         HaveGarbage();
-        if (mixObject == null && a.name != b.name && HaveGarbage() ==0)
+        if (mixObject == null && a.name != b.name && HaveGarbage() == 0)
         {
             GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().startAni = 1;
             GameObject.FindWithTag("UI").SendMessage("MixItemDestroy");
             recordGarbage[iGarbage].garbageA = a.name;
             recordGarbage[iGarbage].garbageB = b.name;
-            
+
         }
     }
     void Generate(GameObject obj)
@@ -331,42 +331,51 @@ public class Spawner : MonoBehaviour
         if (mixObject == null)
         {
             if (a.name != "fish")
-                {
-                    RandomGenerate(a);
-                    Destroy(a);
-                }
-                if (a.name == "fish")
-                {
-                    GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
-                    g.name = a.name;
-                    g.gameObject.SetActive(true);
-                    Destroy(a);
-                }
-                if (b.name != "fish")
-                {
-                    RandomGenerate(b);
-                    Destroy(b);
-                }
-                if (b.name == "fish")
-                {
-                    GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
-                    g.name = b.name;
-                    g.gameObject.SetActive(true);
-                    Destroy(b);
-                }
+            {
+                RandomGenerate(a);
+                Destroy(a);
+            }
+            if (a.name == "fish")
+            {
+                GameObject g = Instantiate(a, a.transform.position, a.transform.rotation);
+                g.name = a.name;
+                g.gameObject.SetActive(true);
+                Destroy(a);
+            }
+            if (b.name != "fish")
+            {
+                RandomGenerate(b);
+                Destroy(b);
+            }
+            if (b.name == "fish")
+            {
+                GameObject g = Instantiate(b, b.transform.position, b.transform.rotation);
+                g.name = b.name;
+                g.gameObject.SetActive(true);
+                Destroy(b);
+            }
             GameObject.FindWithTag("garbage").gameObject.transform.GetChild(iGarbage).gameObject.SetActive(true);
             iGarbage++;
         }
     }
-    int HaveGarbage(){
+    int HaveGarbage()
+    {
         for (int i = 0; i < iGarbage; i++)
         {
-            if ((recordGarbage[i].garbageA == a.name && recordGarbage[i].garbageB == b.name)||(recordGarbage[i].garbageA == b.name && recordGarbage[i].garbageB == a.name) )
+            if ((recordGarbage[i].garbageA == a.name && recordGarbage[i].garbageB == b.name) || (recordGarbage[i].garbageA == b.name && recordGarbage[i].garbageB == a.name))
             {
                 GameObject.FindWithTag("potUI").GetComponent<PotUI>().haveMix = true;
                 return 1;
             }
         }
         return 0;
+    }
+    void GenerateChild(GameObject obj)
+    {
+        mixObject = obj;
+        GameObject.FindWithTag("MixAni").GetComponent<Animator>().SetBool("child",true);
+        GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().startAni = 1;
+        mixRecord(obj);
+        iRecord++;
     }
 }
