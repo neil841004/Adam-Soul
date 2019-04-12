@@ -44,12 +44,6 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 136
-      - serializedVersion: 2
-        time: 6.1875
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -73,13 +67,13 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.5
+        time: 5.0625
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.1875
+        time: 5.75
         value: 0
         inSlope: 0
         outSlope: 0
@@ -123,13 +117,13 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.125
+        time: 4.6875
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.875
+        time: 5.4375
         value: 0
         inSlope: 0
         outSlope: 0
@@ -514,14 +508,6 @@ AnimationClip:
       value: {fileID: 21300022, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
     - time: 5.75
       value: {fileID: 21300024, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
-    - time: 5.8125
-      value: {fileID: 21300026, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
-    - time: 5.875
-      value: {fileID: 21300028, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
-    - time: 5.9375
-      value: {fileID: 21300030, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
-    - time: 6.1875
-      value: {fileID: 0}
     attribute: m_Sprite
     path: WomanLove
     classID: 114
@@ -766,16 +752,12 @@ AnimationClip:
     - {fileID: 21300020, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
     - {fileID: 21300022, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
     - {fileID: 21300024, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
-    - {fileID: 21300026, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
-    - {fileID: 21300028, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
-    - {fileID: 21300030, guid: 5ac7b7ee951454bd19f66810a0856edd, type: 3}
-    - {fileID: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 6.25
+    m_StopTime: 5.8125
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -806,12 +788,6 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 136
-      - serializedVersion: 2
-        time: 6.1875
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -835,13 +811,13 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.5
+        time: 5.0625
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 6.1875
+        time: 5.75
         value: 0
         inSlope: 0
         outSlope: 0
@@ -933,13 +909,13 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.125
+        time: 4.6875
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 5.875
+        time: 5.4375
         value: 0
         inSlope: 0
         outSlope: 0
@@ -956,7 +932,14 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
-  - time: 6
+  - time: 1.3125
+    functionName: CallSounds
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 13
+    messageOptions: 0
+  - time: 5.5
     functionName: ShowIcon
     data: 
     objectReferenceParameter: {fileID: 0}
