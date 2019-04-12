@@ -19,9 +19,9 @@ public class Camera : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 targetCamPos = target.position + offset;
-        transform.position = new Vector3(Mathf.Clamp(Mathf.Lerp(transform.position.x, targetCamPos.x, smoothing * Time.deltaTime), -9.7f, 9.7f)
+        transform.position = new Vector3(Mathf.Clamp(Mathf.Lerp(transform.position.x, targetCamPos.x, smoothing * Time.deltaTime), -5.38f, 5.38f)
             , Mathf.Clamp(Mathf.Lerp(transform.position.y, targetCamPos.y, smoothing * Time.deltaTime), 0, 10)
-            , Mathf.Clamp(Mathf.Lerp(transform.position.z, targetCamPos.z, smoothing * Time.deltaTime), -5.5f, 5.5f));
+            , Mathf.Clamp(Mathf.Lerp(transform.position.z, targetCamPos.z, smoothing * Time.deltaTime), -9f, -1.25f));
         //transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);
     }
 }

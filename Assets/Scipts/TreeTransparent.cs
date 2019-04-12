@@ -11,7 +11,7 @@ public class TreeTransparent : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        color = this.gameObject.GetComponent<SpriteRenderer>().color;
+        color = this.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class TreeTransparent : MonoBehaviour
                 color.a += 0.05f;
             }
         }
-        this.gameObject.GetComponent<SpriteRenderer>().color = color;
+        this.transform.GetChild(0).GetComponent<SpriteRenderer>().color = color;
 
     }
     private void OnTriggerEnter(Collider other)

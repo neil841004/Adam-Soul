@@ -51,7 +51,7 @@ public class Spawner : MonoBehaviour
                 int targetX = Random.Range(-16, 16);
                 int targetZ = Random.Range(-9, 9);
                 vector3 = new Vector3(transform.position.x + targetX, 0, transform.position.z + targetZ);
-                GameObject g = Instantiate(monster[j], vector3, transform.rotation);
+                GameObject g = Instantiate(monster[j], vector3, monster[j].transform.rotation);
                 g.name = monster[j].name;
             }
         }
