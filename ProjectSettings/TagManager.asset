@@ -79,6 +79,9 @@ TagManager:
   - name: monster
     uniqueID: 49452981
     locked: 0
+  - name: Shadow
+    uniqueID: 3743186495
+    locked: 0
   - name: char
     uniqueID: 3005219941
     locked: 0

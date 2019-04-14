@@ -102,6 +102,8 @@ public class Animal : MonoBehaviour
 
     void AiMove()
     {
+        float y = 0;
+        this.transform.position = new Vector3(transform.position.x, y, transform.position.z);
         AiMovetimer += Time.deltaTime;
         transform.Translate(aiX * Time.deltaTime, aiZ * Time.deltaTime, 0);
         if (AiMovetimer > AiMovetime)
