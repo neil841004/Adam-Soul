@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject[] monster;
-    public GameObject[] record = new GameObject[36];
+    public GameObject[] record = new GameObject[31];
     [System.Serializable]
     public struct RecordGarbage
     {
