@@ -90,6 +90,7 @@ public class VacuumCleaner : MonoBehaviour
         if (iFlash == 0)
         {
             aniPackageUI.SetBool("attack", true);
+            aniPackageUI.Play("vacuum fade",0,0f);
             iFlash++;
         }
     }

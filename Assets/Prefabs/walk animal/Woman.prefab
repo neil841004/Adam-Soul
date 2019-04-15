@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0de6fe6d8c7947da9311c6f7926abe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  centerDistance: 0
+  centerDistance: 0.1
 --- !u!169 &169164785582942334
 AudioLowPassFilter:
   m_ObjectHideFlags: 1
