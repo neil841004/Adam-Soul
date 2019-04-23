@@ -30,6 +30,8 @@ TagManager:
   - BGM
   - love
   - Map
+  - Rainbow
+  - marijuana
   layers:
   - Default
   - TransparentFX

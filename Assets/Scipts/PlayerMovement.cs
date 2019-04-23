@@ -11,9 +11,8 @@ public class PlayerMovement : MonoBehaviour
         playerLeft,
         playerRight
     }
-
     public State state;
-    float speed = 6f;
+    public float speed = 6f;
     public float speedOringin = 6f;
     public GameObject animal_1 = null;
     public GameObject animal_2 = null;
@@ -27,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isThrow = false;
     bool isMix = false;
     public bool onRiver = false;
-    bool slowSpeed = false;
+    public bool slowSpeed = false;
     private int curstate;
     public int count = 0;
     int throwDistance = 2;
@@ -35,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     private int[] chooseani = new int[2];
     public GameObject detect;
     bool playingMixAnimation = false;
+    public GameObject rainbow;
     
     // Use this for initialization
     void Start()
@@ -162,6 +162,20 @@ public class PlayerMovement : MonoBehaviour
             state = newState;
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("marijuana"))
+        {
+			StartCoroutine("Crazzy");
+        }
+    }
+	public IEnumerator Crazzy(){
+		rainbow.SetActive(true);
+        speedOringin = -8;
+		yield return new WaitForSeconds(5f);
+		rainbow.SetActive(false);
+        speedOringin = 8;
+	}
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("River"))
@@ -170,7 +184,6 @@ public class PlayerMovement : MonoBehaviour
             onRiver = true;
         }
     }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("River")&&this.gameObject.name == "player")
@@ -196,8 +209,6 @@ public class PlayerMovement : MonoBehaviour
                         obj.SendMessage("Item1");
                         GameObject.FindWithTag("Sound").SendMessage("Package",1);
                         GameObject.FindWithTag("Sound").SendMessage("Sound",6);
-                        
-                        
                     }
                     else if (animal_1)
                     {
@@ -212,7 +223,6 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
-
     }
     private void Throw()
     {
@@ -258,10 +268,6 @@ public class PlayerMovement : MonoBehaviour
     {
         isThrow = false;
         animator.SetBool("throw", isThrow);
-    }
-    void TakeJoint()
-    {
-
     }
     void PlaySound()
     {
