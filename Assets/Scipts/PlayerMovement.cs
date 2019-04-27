@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject detect;
     bool playingMixAnimation = false;
     public GameObject rainbow;
-    
+
     // Use this for initialization
     void Start()
     {
@@ -162,41 +162,22 @@ public class PlayerMovement : MonoBehaviour
             state = newState;
         }
     }
-    private void OnTriggerEnter(Collider other)
+    
+    public void InRiver()
     {
-        if (other.CompareTag("marijuana"))
-        {
-			StartCoroutine("Crazzy");
-        }
+        speed = speedOringin * 0.6f;
+        onRiver = true;
     }
-	public IEnumerator Crazzy(){
-		rainbow.SetActive(true);
-        speedOringin = -8;
-		yield return new WaitForSeconds(5f);
-		rainbow.SetActive(false);
-        speedOringin = 8;
-	}
-    private void OnTriggerStay(Collider other)
+    public void OutRiver()
     {
-        if (other.CompareTag("River"))
-        {
-            speed = speedOringin * 0.6f;
-            onRiver = true;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("River")&&this.gameObject.name == "player")
-        {
-            speed = speedOringin;
-            onRiver = false;
-        }
+        speed = speedOringin;
+        onRiver = false;
     }
     private void OnCollisionStay(Collision other)
     {
         if (isAttack)
         {
-            if (other.collider.CompareTag("Animal")&&!animal_2)
+            if (other.collider.CompareTag("Animal") && !animal_2)
             {
                 GameObject.FindWithTag("UI").SendMessage("Flash");
                 aniTeach.SetBool("attack", isAttack);
@@ -207,8 +188,8 @@ public class PlayerMovement : MonoBehaviour
                         animal_1 = other.gameObject;
                         animal_1.gameObject.SetActive(false);
                         obj.SendMessage("Item1");
-                        GameObject.FindWithTag("Sound").SendMessage("Package",1);
-                        GameObject.FindWithTag("Sound").SendMessage("Sound",6);
+                        GameObject.FindWithTag("Sound").SendMessage("Package", 1);
+                        GameObject.FindWithTag("Sound").SendMessage("Sound", 6);
                     }
                     else if (animal_1)
                     {
@@ -216,8 +197,8 @@ public class PlayerMovement : MonoBehaviour
                         animal_2 = other.gameObject;
                         animal_2.gameObject.SetActive(false);
                         obj.SendMessage("Item2");
-                        GameObject.FindWithTag("Sound").SendMessage("Package",2);
-                        GameObject.FindWithTag("Sound").SendMessage("Sound",6);
+                        GameObject.FindWithTag("Sound").SendMessage("Package", 2);
+                        GameObject.FindWithTag("Sound").SendMessage("Sound", 6);
                         aniTeach.SetBool("mix", true);
                     }
                 }
@@ -229,7 +210,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && isThrow == false)
         {
             charSound.SendMessage("PlaySound", 1);
-            if(!animal_1){
+            if (!animal_1)
+            {
                 isThrow = true;
                 animator.SetBool("throw", isThrow);
             }
@@ -281,6 +263,11 @@ public class PlayerMovement : MonoBehaviour
     void StopSound()
     {
         this.GetComponent<AudioSource>().Stop();
+    }
+    void EatUmariluana(){
+        if(Input.GetKeyDown(KeyCode.E)){
+        GameObject.FindWithTag("Rainbow").SendMessage("UmariluanaEnter");
+        }
     }
 }
 

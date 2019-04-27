@@ -58,7 +58,7 @@ public class Spawner : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -68,14 +68,14 @@ public class Spawner : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
             potUI.SendMessage("FlashStart");
         }
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
             potUI.SendMessage("EndShow");
         }

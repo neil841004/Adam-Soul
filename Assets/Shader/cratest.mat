@@ -55,7 +55,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _rainbow:
-        m_Texture: {fileID: 2800000, guid: 9e8ec0b114ea944629bc2651c24ed593, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7a5ce2f56f27d4700a874a0775bde31e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -75,12 +75,16 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _node_1717: 0.3
-    - _node_9701: 0
-    - _speed: 1
+    - _alpha: 0
+    - _changecolor: 0.9446061
+    - _node_1717: 0.395
+    - _node_9701: 1
+    - _speed: 0.8
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _color01: {r: 1, g: 0, b: 0, a: 1}
+    - _color02: {r: 0, g: 0.07107735, b: 1, a: 1}
     - _color1: {r: 0.86764705, g: 0.09569635, b: 0.09569635, a: 1}
     - _color2: {r: 0, g: 1, b: 0.006896496, a: 1}
     - _hue: {r: 0.45588237, g: 0.45588237, b: 0.45588237, a: 1}

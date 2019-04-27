@@ -149,7 +149,7 @@ public class Animal : MonoBehaviour
 
     private void OnCollisionStay(Collision other)
     {
-        if (!other.collider.CompareTag("Player"))
+        if (!other.collider.CompareTag("PlayerCollider"))
         {
             escapeCount = 0;
         }
@@ -191,7 +191,7 @@ public class Animal : MonoBehaviour
                 aiX = -Mathf.Abs(aiX);
             }
         }
-        if (gameObject.name == "Woman" && other.collider.CompareTag("Player"))
+        if (gameObject.name == "Woman" && other.collider.CompareTag("PlayerCollider"))
         {
             
             aiX = 0;
@@ -204,12 +204,12 @@ public class Animal : MonoBehaviour
     {
         if ((other.collider.CompareTag("static") || other.collider.CompareTag("Player") || other.collider.CompareTag("Set")) && escapeCount == 0 )
         {
-            if(!(other.collider.CompareTag("Player")&&gameObject.name=="Woman")){
+            if(!(other.collider.CompareTag("PlayerCollider")&&gameObject.name=="Woman")){
             aiX = -aiX;
             aiZ = -aiZ;
             }
         }
-        if (!other.collider.CompareTag("Player"))
+        if (!other.collider.CompareTag("PlayerCollider"))
         {
             escapeCount = 0;
         }

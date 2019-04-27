@@ -6,6 +6,7 @@ public class WomanMovement : MonoBehaviour
 {
     public GameObject love;
     GameObject lv;
+    public GameObject angryIcon;
 
     // Use this for initialization
     void Start()
@@ -21,7 +22,7 @@ public class WomanMovement : MonoBehaviour
     }
     void OnCollisionStay(Collision other)
     {
-        if (other.collider.CompareTag("Player"))
+        if (other.collider.CompareTag("PlayerCollider"))
         {
             if (lv.GetComponent<Love>().i <= 37)
             {
@@ -37,21 +38,24 @@ public class WomanMovement : MonoBehaviour
 
         }
     }
+    void Angry(bool i){
+        angryIcon.SetActive(i);
+    }
     private void OnCollisionEnter(Collision other)
     {
         bool manEnd = GameObject.FindWithTag("MixAni").GetComponent<MixAnimation>().manEnd;
-        if (!this.GetComponent<AudioSource>().isPlaying && !manEnd && other.collider.CompareTag("Player"))
+        if (!this.GetComponent<AudioSource>().isPlaying && !manEnd && other.collider.CompareTag("PlayerCollider"))
         {
             this.GetComponent<AudioSource>().PlayOneShot(this.GetComponent<AudioSource>().clip);
             
         }
-        if(other.collider.CompareTag("Player")){
+        if(other.collider.CompareTag("PlayerCollider")){
             this.GetComponent<Animator>().SetBool("love",true);
         }
     }
     private void OnCollisionExit(Collision other)
     {
-        if (other.collider.CompareTag("Player"))
+        if (other.collider.CompareTag("PlayerCollider"))
         {
             lv.SetActive(false);
             this.GetComponent<Animator>().SetBool("love",false);

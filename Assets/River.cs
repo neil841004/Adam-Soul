@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class umarijuana : MonoBehaviour {
-	bool eatUmariluana;
-	public GameObject icon;
+public class River : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		
@@ -12,21 +11,20 @@ public class umarijuana : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//eatUmariluana = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().eatUmariluana;
+		
 	}
 	private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("PlayerCollider"))
         {
-			icon.SetActive(true);
-			GameObject.FindWithTag("Player").SendMessage("EatUmariluana");
+            GameObject.FindWithTag("Player").SendMessage("InRiver");
         }
     }
-	private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("PlayerCollider"))
         {
-			icon.SetActive(false);
+            GameObject.FindWithTag("Player").SendMessage("OutRiver");
         }
     }
 }

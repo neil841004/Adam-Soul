@@ -24,7 +24,7 @@ public class ObjectMove : MonoBehaviour {
         }
     }
 	private void OnCollisionEnter(Collision other) {
-		if(canEat && other.collider.CompareTag("Player")&&player.GetComponent<PlayerMovement>().isAttack){
+		if(canEat && other.collider.CompareTag("PlayerCollider")&&player.GetComponent<PlayerMovement>().isAttack){
 			Destroy(this.gameObject);
 			GameObject.FindWithTag("Sound").SendMessage("Sound",soundNumber);
 		}	

@@ -33,7 +33,7 @@ public class RecordMusic : MonoBehaviour
     // Update is called once per frame
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
             if (iCount == 0 || iCount == 2)
             {
@@ -58,7 +58,7 @@ public class RecordMusic : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
             changeSongIcon.gameObject.SetActive(false);
             stopSongIcon.gameObject.SetActive(false);

@@ -32,6 +32,7 @@ TagManager:
   - Map
   - Rainbow
   - marijuana
+  - PlayerCollider
   layers:
   - Default
   - TransparentFX

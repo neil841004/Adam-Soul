@@ -15,9 +15,9 @@ public class OutMap : MonoBehaviour {
 	}
 	private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
-            other.transform.position = new Vector3(3.43f, 0, 1.84f);
+            GameObject.FindWithTag("Player").transform.position = new Vector3(3.43f, 0, 1.84f);
         }
     }
 }
