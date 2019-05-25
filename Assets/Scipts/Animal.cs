@@ -202,7 +202,7 @@ public class Animal : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if ((other.collider.CompareTag("static") || other.collider.CompareTag("Player") || other.collider.CompareTag("Set")) && escapeCount == 0 )
+        if ((other.collider.CompareTag("static") || other.collider.CompareTag("PlayerCollider") || other.collider.CompareTag("Set")) && escapeCount == 0 )
         {
             if(!(other.collider.CompareTag("PlayerCollider")&&gameObject.name=="Woman")){
             aiX = -aiX;
